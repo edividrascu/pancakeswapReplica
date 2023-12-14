@@ -9,7 +9,7 @@
     font-family: 'Kanit', sans-serif;
     font-size: 100%;
 }
-#coin-animation{
+#cake-animation{
     position: relative;
     width: 100%;
     display: flex;
@@ -19,13 +19,13 @@
     padding: 48px 0px;
     background-color: #08060b;
 }
-.coin-animation-container{
+.cake-animation-container{
     margin: 0px;
     max-width: 968px;
     padding: 0px 16px;
     overflow: visible;
 }
-.coin-child-1{
+.cake-child-1{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -33,18 +33,18 @@
     margin-left: 0px;
     gap:32px;
 }
-.coin-child-1-title{
+.cake-child-1-title{
     display: inline-flex;
     justify-content: center;
 }
-.coin-child-1-title p:first-child{
+.cake-child-1-title p:first-child{
     font-size: 40px;
     color: #f4eeff;
     font-weight: 600;
     line-height: 110%;
     display: inline;
 }
-.coin-child-1-title p:nth-child(2){
+.cake-child-1-title p:nth-child(2){
     font-size: 40px;
     margin-left: 10px;
     color: rgb(168, 129, 252);
@@ -52,11 +52,11 @@
     line-height: 110%;
     display: inline;
 }
-.coin-child-1-text{
+.cake-child-1-text{
     display: flex;
     justify-content: center; 
 }
-.coin-child-1-text p{
+.cake-child-1-text p{
     font-size: 20px;
     padding: 0px 16px;
     color: rgb(184, 173, 210);
@@ -65,18 +65,18 @@
     display: inline;
     text-align: center;
 }
-.coin-child-1-buttons{
+.cake-child-1-buttons{
     display: flex;
     justify-content: center;
     gap: 14px;
 }
-.coin-child-1-buttons a{
+.cake-child-1-buttons a{
     text-decoration: none;
     display: flex;
     align-items: center;
     width: fit-content;
 }
-.coin-child-1-buttons a:first-child{
+.cake-child-1-buttons a:first-child{
     color: var(--colors-primary);
     font-size: 16px;
     position: relative;
@@ -98,7 +98,7 @@
     background-color: var(--colors-primary);
     color: var(--colors-invertedContrast);
 }
-.coin-child-1-buttons a:nth-child(2){
+.cake-child-1-buttons a:nth-child(2){
     position: relative;
     align-items: center;
     border: 0px;
@@ -120,7 +120,7 @@
     color: var(--colors-primary);
     box-shadow: none;
 }
-.coin-child-1-buttons a:nth-child(2) svg{
+.cake-child-1-buttons a:nth-child(2) svg{
     align-self: center;
     fill: var(--colors-primary);
     color: var(--colors-primary);
@@ -128,7 +128,7 @@
     margin-left: 0.5rem;
 }
 
-.coin-child-2{
+.cake-child-2{
     margin-top: calc(52px+32px);
     flex-direction: row;
     width: 936px;
