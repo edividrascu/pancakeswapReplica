@@ -22,7 +22,7 @@
     z-index: 1;
     padding: 48px 0px;
     background-color: #08060b;
-    height: 100vh;
+    height: 100vh; /*Eliminar este heigh al terminar sección*/
 }
 .cake-animation-container{
     margin: 0px;
