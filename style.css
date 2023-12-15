@@ -5,6 +5,7 @@
     --colors-text: #f4eeff;
     --colors-cardBorder: #383241;
     --colors-backgroundAlt: #27262c;
+    --colors-secondary: #a881fc;
 }
 *{
     margin: 0;
@@ -21,6 +22,7 @@
     z-index: 1;
     padding: 48px 0px;
     background-color: #08060b;
+    height: 100vh;
 }
 .cake-animation-container{
     margin: 0px;
@@ -152,7 +154,7 @@
 }
 .cake-ecosystem-container{
     max-width: 33%;
-    overflow: visible;
+    overflow: hidden;
     padding: 24px 36px;
     position: relative;
     display: flex;
@@ -183,8 +185,12 @@
     z-index: 99;
     box-shadow: -51px 50px 50px 5px #08060b;
 }
-.cake-ecosystem-list-container{
+.cake-ecosystem-list-container-overflow{
     overflow: hidden;
+    height: 210px;
+}
+.cake-ecosystem-list-container{
+    margin-bottom: 8px;
 }
 .cake-ecosystem-list{
     flex: 0 0 auto;
@@ -195,9 +201,6 @@
     align-items: center;
     justify-content: center;
     animation: scroll 8.32s linear 0s infinite;
-    animation-play-state: var(--play);
-    animation-delay: var(--delay);
-    animation-direction: var(--direction);
 }
 @keyframes scroll {
     0% {
@@ -261,4 +264,136 @@
     left: 50%;
     transform: translate(-50%, -52%) scale(0.75);
     background-color: transparent;
+}
+.cake-partners-container{
+    max-width: 33%;
+    padding: 24px 36px;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 1; 
+    margin-bottom: 118px;
+}
+.cake-partners{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    overflow: hidden;
+}
+.cake-partners h1{
+    color: var(--colors-text);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;  
+    position: relative;
+    z-index: 99;
+    box-shadow: -5px 50px 50px 5px #08060b;
+}
+.cake-partners-list-container-overflow{
+    overflow: hidden;
+    height: 210px;
+}
+.cake-partners-list-container{
+    margin-bottom: 8px;
+}
+.cake-partners-list{
+    flex: 0 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 6.32s linear 0s infinite;
+}
+.cake-partners-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cake-partners-list ul li{
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: row;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    height: 100%;
+    top: 0px;
+    width: fit-content;
+    border-radius: 24px;
+    border: 1px solid var(--colors-cardBorder);
+    background: var(--colors-backgroundAlt);
+    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+}
+.cake-partners-list ul li svg{
+    align-self: center;
+    color: rgb(168, 129, 252); 
+    size: 16px;
+}
+.cake-partners-list ul li p{
+    color: var(--colors-text);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px; 
+}
+.cake-linea-v-der{
+    bottom: 0px;
+    top: auto;
+    left: 0px;
+    height: 100%;
+    width: 1px;
+    background: var(--colors-secondary);
+    position: absolute;
+}
+.cake-linea-h-der{
+    transform: scaleX(1);
+    width: 108px;
+    height: 1px;
+    left: -108px;
+    top: 33.33%;
+    transform-origin: left center;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.35s ease-in-out 0s;
+    background: var(--colors-secondary);
+    padding: 0 18px;
+}
+.cake-linea-v-izq{
+    bottom: auto;
+    top: 0px;
+    right: 1px;
+    height: 100%;
+    width: 1px;
+    background: var(--colors-secondary);
+    position: absolute;
+}
+.cake-linea-h-izq{
+    transform: scaleX(1);
+    width: 108px;
+    height: 1px;
+    left: 277px;
+    top: 50%;
+    transform-origin: right center;
+    background: var(--colors-secondary);
+    position: absolute;
+    z-index: 4;
+}
+.cake-linea-h-izq::before{
+    inset: -2px 0px auto auto;  
+    content: "";
+    position: absolute;
+    background: var(--colors-secondary);
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
 }
