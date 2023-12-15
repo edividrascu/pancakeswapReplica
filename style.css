@@ -2,6 +2,9 @@
     --colors-primary: #1fc7d4;
     --colors-invertedContrast: #191326;
     --colors-gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
+    --colors-text: #f4eeff;
+    --colors-cardBorder: #383241;
+    --colors-backgroundAlt: #27262c;
 }
 *{
     margin: 0;
@@ -41,7 +44,7 @@
 }
 .cake-child-1-title p:first-child{
     font-size: 40px;
-    color: #f4eeff;
+    color: var(--colors-text);
     font-weight: 600;
     line-height: 110%;
     display: inline;
@@ -136,9 +139,111 @@
     width: 936px;
     height: 500px; 
 }
+.cake-container{
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 8px;
+    margin-top: 50px;
+    flex-direction: row;
+    width: 936px;
+    height: 500px;
+
+}
+.cake-ecosystem-container{
+    max-width: 33%;
+    overflow: visible;
+    padding: 24px 36px;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    z-index: 1;
+}
+.cake-ecosystem{
+    padding-right: 20px; 
+    position: relative;
+    z-index: 3;
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+}
+.cake-ecosystem::before{
+    transform: translateY(-87%);
+}
+.cake-ecosystem h1{
+    color: var(--colors-text);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600; 
+    position: relative;
+    z-index: 99;
+    box-shadow: -51px 50px 50px 5px #08060b;
+}
+.cake-ecosystem-list-container{
+    overflow: hidden;
+}
+.cake-ecosystem-list{
+    flex: 0 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 8.32s linear 0s infinite;
+    animation-play-state: var(--play);
+    animation-delay: var(--delay);
+    animation-direction: var(--direction);
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.cake-ecosystem-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cake-ecosystem-list ul li{
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: row;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    height: 100%;
+    top: 0px;
+    width: fit-content;
+    border-radius: 24px;
+    border: 1px solid var(--colors-cardBorder);
+    background: var(--colors-backgroundAlt);
+    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+}
+.cake-ecosystem-list ul li svg{
+    align-self: center;
+    fill: rgb(168, 129, 252);
+    color: rgb(168, 129, 252); 
+    size: 16px;
+}
+.cake-ecosystem-list ul li p{
+    color: var(--colors-text);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px; 
+}
 .cake-video-container{
     position: relative;
-    z-index: 2;
+    z-index: -1;
     display: flex;
     margin-top: 20px;
     justify-content: center;
