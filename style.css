@@ -1,7 +1,7 @@
 :root{
     --colors-primary: #1fc7d4;
     --colors-invertedContrast: #191326;
-
+    --colors-gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
 }
 *{
     margin: 0;
@@ -32,6 +32,8 @@
     overflow: visible;
     margin-left: 0px;
     gap:32px;
+    position: relative;
+    z-index: 99;
 }
 .cake-child-1-title{
     display: inline-flex;
@@ -129,12 +131,29 @@
 }
 
 .cake-child-2{
-    margin-top: calc(52px+32px);
+    margin-top: 84px;
     flex-direction: row;
     width: 936px;
     height: 500px; 
 }
+.cake-video-container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
 .cake-video{
+    position: relative;
     width: 330px;
     height: 360px;
+    z-index: -1;
+}
+#canvas-cake{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%) scale(0.75);
+    background-color: transparent;
 }

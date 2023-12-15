@@ -19,17 +19,24 @@ const height = 900;
 let canvasInterval = null;
 
 function drawImage() {
-    context.fillRect(20, 20, 800, 800);
+    grd = context.createRadialGradient(canvas.width/2, canvas.height/2, 100, canvas.width/2, canvas.height/2, 400);
+    grd.addColorStop(0, "#351A57");
+    grd.addColorStop("0.25", "#2B1547");
+    grd.addColorStop("0.5", "#201133");
+    grd.addColorStop("0.75", "#150B20");
+    grd.addColorStop(1, "#08060b");
+    context.fillStyle = grd;
+    context.fillRect(0, 0, canvas.width, canvas.height);
     canvas.getContext('2d',).drawImage(video, 0, 0, canvas.width, canvas.height);
 }
 
 canvasInterval = window.setInterval(() => {
     window.requestAnimationFrame(drawImage);
-}, 30);
+}, 60);
 
 video.onplay = function() {
   clearInterval(canvasInterval);
   canvasInterval = window.setInterval(() => {
     drawImage(video);
-  }, 30);
+  }, 60);
 };
