@@ -40,3 +40,35 @@ video.onplay = function() {
     drawImage(video);
   }, 60);
 };
+
+
+
+/******* Numbers animations ***************/
+
+function randomNumbers(element,digits,commas){
+  
+  let setAnimation = setInterval(()=>{
+      let randomNumber = [Math.ceil((10**(digits))*Math.random())];
+      let animatedText = randomNumber ;
+      for(i=0;i<commas;i++){
+        randomNumber = [Math.ceil((10**(digits))*Math.random())];
+        animatedText = animatedText +","+ randomNumber;
+      }
+      setTimeout(()=>clearInterval(setAnimation),1000); 
+      element.innerHTML = animatedText;
+
+  },10);
+  setTimeout(()=>clearInterval(setAnimation),1000); 
+}
+
+let circulatingSupply = document.getElementById("circulatin-supply-number");
+randomNumbers(circulatingSupply,3,2);
+setTimeout(()=>circulatingSupply.innerText = "262,897,833",1000);
+
+let totalSupply = document.getElementById("total-supply-number");
+randomNumbers(totalSupply,3,2);
+setTimeout(()=>totalSupply.innerText = "386,271,349",1000);
+
+let tokenBurn = document.getElementById("token-burn-number");
+randomNumbers(tokenBurn,3,2);
+setTimeout(()=>tokenBurn.innerText = "1,099,492,387",1000);
