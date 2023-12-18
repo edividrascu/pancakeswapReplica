@@ -357,10 +357,10 @@
 }
 .cake-linea-h-der{
     transform: scaleX(1);
-    width: 108px;
+    width: 53px;
     height: 1px;
-    left: -108px;
-    top: 33.33%;
+    left: -53px;
+    top: 45%;
     transform-origin: left center;
     position: absolute;
     z-index: 2;
