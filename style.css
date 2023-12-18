@@ -444,3 +444,94 @@
     font-size: 24px;
     text-align: center;
 }
+@media(max-width: 968px){
+    .cake-child-1-title p:first-child{
+        font-size: 32px; 
+    }
+    .cake-container{
+        flex-direction: column;
+    }
+    .cake-child-2 {
+        margin-top: -100px;
+        width: auto;
+    }
+    .cake-ecosystem-container{
+        max-width: 100%;
+        padding: 16px 24px;
+    }
+    .cake-ecosystem{
+        padding-right: 20px; 
+    }
+    .cake-ecosystem-list-container-overflow{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    .cake-ecosystem-list ul{
+        flex-direction: row;
+    }
+    .cake-ecosystem-list{
+        animation: scrollX 8.32s linear 0s infinite;
+    }
+    @keyframes scrollX {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .cake-linea-h-izq{
+        transform: rotate(90deg); 
+    }
+    .cake-ecosystem h1{
+        box-shadow: none;  
+    }
+    .cake-ecosystem-list ul li{
+        white-space: nowrap;
+    }
+    .cake-linea-v-izq{
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: var(--colors-secondary);
+        bottom: 0px;
+    } 
+    
+
+    .cake-partners-container{
+        max-width: 100%;
+        padding: 16px 24px;
+    }
+    .cake-partners{
+        padding-right: 20px; 
+    }
+    .cake-partners-list-container-overflow{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    .cake-partners-list ul{
+        flex-direction: row;
+    }
+    .cake-partners-list{
+        animation: scrollX 8.32s linear 0s infinite;
+    }
+    @keyframes scrollX {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .cake-linea-h-izq{
+        transform: rotate(90deg); 
+    }
+    .cake-partners h1{
+        box-shadow: none;  
+    }
+    .cake-partners-list ul li{
+        white-space: nowrap;
+    }
+}
