@@ -56,7 +56,7 @@ body img {
     box-sizing: border-box;
     padding: 48px 24px 24px;
     min-height: 360px;
-    margin-top: -480px;
+    margin-top: -540px;
     background-color: #343A5A;
 }
 .h1-trade{
@@ -99,35 +99,42 @@ body img {
     
     
 }
-
-
-
 .card1 a{
     text-decoration: none;
 }
-.card1 .hover {
-    display: none;
-    
-    top: 0;
-    left: 0;
-    transform: scale(1.02);
 
-}
-.card1 .default {
-    display: block;
-    
+
+.card1 .hover {
+    opacity: 0;
     top: 0;
+    position: absolute;
     left: 0;
     
+    transition: opacity .25s ease-in-out .1s;
+}
+
+.card1 .default {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out 1s; ;
 }
 
 .card1:hover .hover {
-    display: block;
+    opacity: 1;
 }
 
 .card1:hover .default {
-    display: none;
+    opacity: 0;
 }
+
+
+
+
+
+
+
+
 .h1-card1{
     color: #F4EEFF;
     margin: 7px;
@@ -164,13 +171,13 @@ body img {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    left: -140px;
+    left: -80px;
     top: -600px;
     position: relative;
-    width: 804px;
+    width: 904px;
     height: 249px;
     /* background-color: red; */
-    
+   
 }
 .img-earn2{
     position: relative;
@@ -185,7 +192,7 @@ body img {
     margin-bottom: 24px;
     font-weight: 600;
     width: 700px;
-    left: 20px;
+    left: 30px;
     
     margin-top: 0;
     position: relative;
