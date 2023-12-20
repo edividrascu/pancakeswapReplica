@@ -471,6 +471,7 @@
         margin-top: -100px;
         width: 100%;
         padding-left: 8px;
+        height: initial;
     }
     .cake-ecosystem-container{
         position: relative;
@@ -541,5 +542,55 @@
     #canvas-cake{
         transform: translate(-50%, -52%) scale(0.65);  
     }
-    
+    .cake-partners-container{
+        max-width: 100%;
+        padding: 16px 24px;
+    }
+    .cake-linea-v-der{
+        display: none;
+    }
+    .cake-linea-h-der{
+        transform: scaleY(1);
+        height: 92px;
+        width: 1px;
+        left: 50%;
+        top: -92px;
+        z-index: 2;
+        transform-origin: center top;
+    }
+    .cake-partners {
+        padding-left: 0px;
+    }
+    .cake-partners h1{
+        box-shadow: none;/*-5px 50px 50px 5px #08060b;*/
+    }
+    .cake-partners-list-container-overflow{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 15px;
+
+    }
+    .cake-partners-list-container{
+        margin-left: 8px; 
+    }
+    .cake-partners-list{  
+        white-space: nowrap;
+        animation: scroll 21.7425s linear 0s infinite reverse;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .cake-partners-list ul{
+        flex-direction: row; 
+    }
+    .cake-linea-h-abj{
+        width: 100%;
+        border-top: solid 1px var(--colors-secondary);
+    }
 }
