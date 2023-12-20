@@ -447,6 +447,7 @@
 @media(max-width: 968px){
     .cake-animation-container{
         width: 100%;
+        padding: 0;
     }
     .cake-child-1{
         margin-bottom: 32px;
@@ -470,7 +471,7 @@
         margin-bottom: 40px;
         margin-top: -100px;
         width: 100%;
-        padding-left: 8px;
+        padding-left: 0px;
         height: initial;
     }
     .cake-ecosystem-container{
