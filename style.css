@@ -545,18 +545,23 @@
     .cake-partners-container{
         max-width: 100%;
         padding: 16px 24px;
+        margin-bottom: 0px;
     }
     .cake-linea-v-der{
         display: none;
     }
     .cake-linea-h-der{
-        transform: scaleY(1);
-        height: 92px;
+        transform: scaleY(-1);
+        position: absolute;
+        height: 79px;
         width: 1px;
         left: 50%;
-        top: -92px;
-        z-index: 2;
+        top: 17px;
+        background: var(--colors-secondary);
+        transition: transform 0.35s ease-in-out 0s;
         transform-origin: center top;
+        z-index: 4;
+        padding: 0;
     }
     .cake-partners {
         padding-left: 0px;
@@ -591,6 +596,7 @@
     }
     .cake-linea-h-abj{
         width: 100%;
+        margin-bottom: 5px;
         border-top: solid 1px var(--colors-secondary);
     }
 }
