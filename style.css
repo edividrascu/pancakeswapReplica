@@ -1,3 +1,12 @@
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+
 *{
     font-family: 'Kanit', sans-serif;
     font-size: 100%;
@@ -5,18 +14,22 @@
 body img {
     height: auto;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 :root {
     --colorPurple: #A881FB;
 }
 .container-ecosystem{
+   /* width: 100%;  bordes blancos  a los lados ??????*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+  
     background-color: rgb(0, 0, 0);
-    
+    margin: 0;
+    padding: 0;
 }
 .title{
     margin-top: 1rem;
@@ -24,6 +37,7 @@ body img {
     font-size: 30px;
 }
 .title-span {
+    
     color: var(--colorPurple);
 }
 .trade-container{
@@ -117,7 +131,7 @@ body img {
     opacity: 1;
     top: 0;
     left: 0;
-    transition: opacity 1s ease-in-out 1s; ;
+    transition: opacity 1s ease-in-out 10s; 
 }
 
 .card1:hover .hover {
@@ -127,13 +141,6 @@ body img {
 .card1:hover .default {
     opacity: 0;
 }
-
-
-
-
-
-
-
 
 .h1-card1{
     color: #F4EEFF;
@@ -210,24 +217,27 @@ body img {
 }
 
 .card2 .hover {
-    display: none;
+    opacity: 0;
     top: 0;
+    position: absolute;
     left: 0;
-    transform: scale(1.02);
+    
+    transition: opacity .25s ease-in-out .1s;
 }
 
 .card2 .default {
-    display: block;
+    opacity: 1;
     top: 0;
     left: 0;
+    transition: opacity 1s ease-in-out 10s; ;
 }
 
 .card2:hover .hover {
-    display: block;
+    opacity: 1;
 }
 
 .card2:hover .default {
-    display: none;
+    opacity: 0;
 }
 
 .card2:hover .h1-a-card1 {
@@ -259,24 +269,27 @@ body img {
 }
 
 .card3 .hover {
-    display: none;
+    opacity: 0;
     top: 0;
+    position: absolute;
     left: 0;
-    transform: scale(1.02);
+    
+    transition: opacity .25s ease-in-out .1s;
 }
 
 .card3 .default {
-    display: block;
+    opacity: 1;
     top: 0;
     left: 0;
+    transition: opacity 1s ease-in-out 10s; ;
 }
 
 .card3:hover .hover {
-    display: block;
+    opacity: 1;
 }
 
 .card3:hover .default {
-    display: none;
+    opacity: 0;
 }
 
 .card3:hover .h1-a-card1 {
@@ -303,24 +316,27 @@ body img {
 }
 
 .card4 .hover {
-    display: none;
+    opacity: 0;
     top: 0;
+    position: absolute;
     left: 0;
-    transform: scale(1.02);
+    
+    transition: opacity .25s ease-in-out .1s;
 }
 
 .card4 .default {
-    display: block;
+    opacity: 1;
     top: 0;
     left: 0;
+    transition: opacity 1s ease-in-out 10s; ;
 }
 
 .card4:hover .hover {
-    display: block;
+    opacity: 1;
 }
-
+""""
 .card4:hover .default {
-    display: none;
+    opacity: 0;
 }
 
 .card4:hover .h1-a-card1 {
@@ -340,26 +356,285 @@ body img {
 }
 
 .card5 .hover {
-    display: none;
+    opacity: 0;
     top: 0;
+    position: absolute;
     left: 0;
-    transform: scale(1.02);
+    
+    transition: opacity .25s ease-in-out .1s;
 }
 
 .card5 .default {
-    display: block;
+    opacity: 1;
     top: 0;
     left: 0;
+    transition: opacity 1s ease-in-out 10s; ;
 }
 
 .card5:hover .hover {
-    display: block;
+    opacity: 1;
 }
 
 .card5:hover .default {
-    display: none;
+    opacity: 0;
 }
 
 .card5:hover .h1-a-card1 {
     color: #1EC7D3;
+}""
+
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+
+
+/* !!!! en min si ponemos min950px y la ventana es mas pequeña de 950 ya no se aplican los estilos */
+@media screen and (max-width: 1200px){
+    .trade-container{
+        box-sizing: border-box;
+        width: 98%;
+        flex-wrap: wrap;
+        height: 650px;
+        background-color: #481ed3;
+    }
+    .container-cards{
+        margin-top: -240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+   .img-trade{
+    position: relative;
+    right: 430px;
+    top: -425px;
+    left: -35%;
+   }
+   .h1-trade{
+       font-size: 40px;
+   }
 }
+
+
+@media screen and (min-width: 850px) and (max-width: 1200px){
+    .trade-container{
+        box-sizing: border-box;
+        width: 98%;
+        flex-wrap: wrap;
+        height: 650px;
+        background-color: #1EC7D3;
+    }
+    .container-cards{
+        display: grid;
+       
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        flex-wrap: wrap;
+        width: 68%;
+        margin-top: -240px;
+        margin-left: 200px;
+        margin-right:100px;
+    }
+   .img-trade{
+    position: relative;
+    right: 430px;
+    top: -425px;
+    left: -35%;
+   }
+   .h1-trade{
+       font-size: 40px;
+   }
+} 
+
+ @media screen and (min-width: 575px)and (max-width: 850px){
+    .trade-container{
+        box-sizing: border-box;
+        width: 98%;
+        flex-wrap: wrap;
+        height: 1000px;
+        background-color: #df0b7c;
+    }
+    .container-cards{
+        display: grid;
+        
+        justify-content: space-between;
+        grid-template-columns: 2fr 2fr 1fr ; 
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1%;
+        grid-column-gap:0%;
+        height: auto;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-top: calc(-15vh - 100px);
+        margin-left: -190px;
+        margin-right:140px;
+    }
+    
+    .card1{
+        width: 80%;
+        font-size: 23px;
+    }
+    .card2{
+        width: 80%;
+        font-size: 23px;
+    }
+    .card3{
+        width: 150%;
+        font-size: 23px;
+    }
+    .card4{
+        
+        max-width: 90%;
+        min-width: 210px;
+        font-size: 23px;
+    }
+    .card5{
+        max-width: 90%;
+        min-width: 210px;
+        font-size: 20px;
+    }
+    .p-card1{
+        font-size: 14px;
+    }
+    .h1-a-card1{
+        font-size: 16px;
+    }
+   .img-trade{
+    position: relative;
+    right: 430px;
+    top: -953px;
+    left: -31%;
+   }
+   .h1-trade{
+       font-size: 35px;
+       margin-left: -262px;
+       margin-top: 310px;
+
+   }
+}
+@media screen and (min-width: 291px)and (max-width: 575px){
+    .trade-container{
+        box-sizing: border-box;
+        width: 98%;
+        flex-wrap: wrap;
+        height: 1220px;
+        background-color: #0fc90f;
+    }
+    .container-cards{
+        display: grid;
+        
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr ;
+        /* grid-row-gap: 2%;  */
+        grid-column-gap:10%;
+        height: auto;
+        flex-wrap: wrap;
+        width:calc(100% - 20vw);
+        margin-top: calc(-36vh - 100px);
+        margin-left: -205px;
+        /* margin-right:40px; */
+        height: 80%;
+    }
+    .h1-a-card1{
+        margin-top: 4px;
+    }
+    .card1{
+        width: calc(310px -1vw);
+        min-width: calc(110px + 30%);
+        font-size: 23px;
+        
+    }
+    .card2{
+        width: calc(310px -1vw);
+        min-width: calc(95px + 30%);
+        font-size: 23px;
+        
+
+    }
+    .card3{
+        width: calc(310px -1vw);
+        min-width: calc(90px + 30%);
+        max-width: 230px;
+        font-size: 23px;
+        
+
+    }
+    .card4{
+        width: calc(310px -1vw);
+        min-width: calc(70px + 30%);
+        font-size: 23px;
+        
+
+    }
+    .card5{
+        width: calc(310px -1vw);
+        min-width: calc(200px + 30%);
+        font-size: 20px;
+        
+        
+    }
+    .p-card1{
+        font-size: 14px;
+    }
+
+    .h1-a-card1{
+        font-size: 16px;
+    }
+   .img-trade{
+    position: relative;
+    
+    top: -1190px;
+    left: -7%;
+    right: -200px;
+    width: 340px;
+
+    
+   }
+   .default{
+       width: 70%;
+   }
+   .hover{
+       width: 70%;
+   }
+   .ultimaImg{
+       width: 40%;
+   }
+   .ultimaImgHover{
+       width: 40%;
+   }
+   .h1-trade{
+       font-size: 32px;
+       left: 40px;
+       top: 30%;
+       
+       
+       
+   }
+}
+
+
+
+
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS *//* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+
+
+
+
+
+
+
+
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
