@@ -10,7 +10,46 @@
 *{
     font-family: 'Kanit', sans-serif;
     font-size: 100%;
+    -webkit-font-smoothing: antialiased;
 }
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.background-ecosystem{
+    background-color: black;
+    
+}
+/* Soporte para propiedades específicas del navegador */
+@supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and (not (-moz-appearance: none)) {
+    .kthPaM {
+        filter: none !important;
+    }
+
+   
+
+    /* Estilos para la barra de desplazamiento en WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: #15111B;
+        
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #b8add2;
+        border-radius: 8px;
+        height: 1px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #372f47;
+        border-radius: 10px;
+        
+    }
+}
+
+
 body img {
     height: auto;
     max-width: 100%;
@@ -334,7 +373,7 @@ body img {
 .card4:hover .hover {
     opacity: 1;
 }
-""""
+
 .card4:hover .default {
     opacity: 0;
 }
@@ -454,7 +493,7 @@ body img {
         box-sizing: border-box;
         width: 98%;
         flex-wrap: wrap;
-        height: 1000px;
+        height: 1050px;
         background-color: #df0b7c;
     }
     .container-cards{
@@ -465,10 +504,11 @@ body img {
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 1%;
         grid-column-gap:0%;
+
         height: auto;
         flex-wrap: wrap;
         width: 80%;
-        margin-top: calc(-15vh - 100px);
+        margin-top: calc(-22vh - 100px);
         margin-left: -190px;
         margin-right:140px;
     }
@@ -504,24 +544,45 @@ body img {
     }
    .img-trade{
     position: relative;
-    right: 430px;
-    top: -953px;
-    left: -31%;
+    /* right: 530px; */
+    top: -973px;
+    left: -19%;
+    width: 340px;
    }
    .h1-trade{
-       font-size: 35px;
-       margin-left: -262px;
-       margin-top: 310px;
-
+    font-size: 41px;
+    margin-left: -271px;
+    margin-top: 377px;
+    width: 200px;
    }
 }
-@media screen and (min-width: 291px)and (max-width: 575px){
+@media screen and (min-width: 200px)and (max-width: 575px){
+    .title{
+        text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block
+    }
+    .title-span{
+        font-weight: 600;
+        margin-left: 8px;
+        font-size: 32px;
+        line-height: 110%;
+        display: inline-block;
+    }
+    .container-ecosystem{
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color:black;
+    }
     .trade-container{
         box-sizing: border-box;
         width: 98%;
         flex-wrap: wrap;
         height: 1220px;
         background-color: #0fc90f;
+        
     }
     .container-cards{
         display: grid;
@@ -529,16 +590,26 @@ body img {
         justify-content: space-between;
         grid-template-columns: 1fr 1fr ; 
         grid-template-rows: 1fr 1fr 1fr ;
-        /* grid-row-gap: 2%;  */
-        grid-column-gap:10%;
+        
+        
         height: auto;
         flex-wrap: wrap;
-        width:calc(100% - 20vw);
-        margin-top: calc(-36vh - 100px);
+        width:100%;
+        margin-top: calc(-41vh - 100px);
         margin-left: -205px;
-        /* margin-right:40px; */
+        
         height: 80%;
-    }
+    } 
+    .h1-trade{
+       
+       font-size: 32px;
+       left: 40px;
+       top: calc(100px - 10vw);
+       width: 200px;
+       
+       
+       
+   }
     .h1-a-card1{
         margin-top: 4px;
     }
@@ -554,6 +625,22 @@ body img {
         font-size: 23px;
         
 
+    }
+    .img-trade{
+    position: relative;
+    
+    top: -1176px;
+    left: -0.2vh;
+    
+    max-width: 340px; /* Ancho máximo de la imagen */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% */
+    min-width: 255px; /* Ancho mínimo de la imagen *//* Ancho mínimo de la imagen */
+    }
+    .card1{
+        width: calc(310px -1vw);
+        min-width: calc(90px + 30%);
+        max-width: 230px;
+        font-size: 23px;
     }
     .card3{
         width: calc(310px -1vw);
@@ -584,36 +671,25 @@ body img {
     .h1-a-card1{
         font-size: 16px;
     }
-   .img-trade{
-    position: relative;
-    
-    top: -1190px;
-    left: -7%;
-    right: -200px;
-    width: 340px;
-
-    
-   }
+   
+   
    .default{
-       width: 70%;
+       max-width: 70%;
+       min-width: 50%;
    }
    .hover{
-       width: 70%;
+    max-width: 70%;
+    min-width: 50%;
    }
    .ultimaImg{
-       width: 40%;
+       max-width: 40%;
+       min-width: 30%;
    }
    .ultimaImgHover{
-       width: 40%;
+    max-width: 40%;
+    min-width: 30%;
    }
-   .h1-trade{
-       font-size: 32px;
-       left: 40px;
-       top: 30%;
-       
-       
-       
-   }
+  
 }
 
 
