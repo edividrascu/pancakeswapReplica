@@ -1,0 +1,672 @@
+* {
+  font-family: "Kanit", sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+@supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and
+  (not (-moz-appearance: none)) {
+  .kthPaM {
+    filter: none !important;
+  }
+
+  /* Estilos para la barra de desplazamiento en WebKit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #15111b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #b8add2;
+    border-radius: 8px;
+    height: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #372f47;
+    border-radius: 10px;
+  }
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+body img {
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ecosystem {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  display: block;
+  background-color: black;
+  box-sizing: border-box;
+  height: 1696.05px;
+}
+.ecosystem a {
+  text-decoration: none;
+}
+.container-ecosystem {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 1696.05px;
+  margin: 0;
+  padding: 48px 0;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(8, 6, 11);
+  font: 16px/16px "Kanit", sans-serif;
+}
+
+.contenido-ecosystem {
+  box-sizing: border-box;
+  display: block;
+  height: 1600.05px;
+  margin: 0;
+  max-width: 1200px;
+  min-height: auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+}
+
+.background-top {
+  box-sizing: border-box;
+  display: block;
+  height: 1696.05px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  box-sizing: border-box;
+  height: 1600.05px;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-conejo {
+  align-self: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  height: 48px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: 48px;
+}
+
+.container-title {
+  box-sizing: border-box;
+  display: block;
+  height: 44px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.discoverThe,
+.title-ecosystem {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  vertical-align: baseline;
+
+}
+
+.discoverThe {
+  color: #f4eeff;
+  border-bottom: 0;
+}
+
+.title-ecosystem {
+  color: #a881fc;
+  border-bottom: 0;
+}
+
+.container-trade {
+  box-sizing: border-box;
+  display: block;
+  height: 417.188px;
+  margin: 48px 0 0;
+  min-height: 360px;
+  padding: 48px 24px 24px;
+  width: 1152px;
+  font: 16px/16px "Kanit", sans-serif;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+  border-radius: 24px;
+}
+
+.container-cards {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 345.188px;
+    width: 1104px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+  
+
+  .parte2-trade {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 345.188px;
+    width: 804px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  
+
+  .title-trade {
+    box-sizing: border-box;
+    display: block;
+    height: 35.1875px;
+    margin: 0 0 24px 0;
+    padding: 0 12px 0 0;
+    width: 804px;
+    font: 600 32px/35.2px "Kanit", sans-serif;
+    color: #a881fc;
+    border-bottom: 0;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+  }
+  
+
+.cards-general {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 286px;
+    margin: 0;
+    padding: 0;
+    width: 804px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  
+.card1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 20%;
+    flex-direction: column;
+    height: 286px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 12px;
+    width: 141.594px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 12px;
+    row-gap: 12()px;
+  
+  }
+  
+.containerImg-card1 {
+    box-sizing: border-box;
+    display: block;
+    height: 108px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 117.594px;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.25s linear;
+  }
+.default {
+    box-sizing: border-box;
+    display: block;
+    height: 108px;
+    margin: 0;
+    max-width: 100%;
+    overflow: clip;
+    padding: 0;
+    position: relative;
+    width: 108px;
+    z-index: 1;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    aspect-ratio: auto 108 / 108;
+    color-scheme: dark;
+    overflow-clip-margin: content-box;
+  }
+  
+.hover {
+    box-sizing: border-box;
+    display: block;
+    height: 108px;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: clip;
+    overflow-y: clip;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 108px;
+    z-index: 2;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out 0s;
+    -webkit-font-smoothing: antialiased;
+    aspect-ratio: auto 108 / 108;
+    color-scheme: dark;
+    opacity: 0;
+    overflow-clip-margin: content-box;
+  }
+  
+
+@media screen and (min-width: 968px) {
+  .card1:hover .hover {
+    transition: opacity 0.25s ease-in-out 0s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    z-index: 2;
+  }
+  .card1-earn:hover .hover {
+    transition: opacity 0.25s ease-in-out 0s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    z-index: 2;
+  }
+  .default {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .default {
+    opacity: 0;
+  }
+  .hover {
+    opacity: 1;
+  }
+}
+.container-text-card1 {
+    box-sizing: border-box;
+    display: block;
+    width: 117.594px;
+    height: 63.5938px;
+    margin: 0;
+    padding: 0;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.swap {
+    box-sizing: border-box;
+    display: block;
+    height: 22px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    width: 117.594px;
+    font-family: Kanit, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #f4eeff;
+  }
+  
+
+.swap-text {
+  color: #f4eeff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  width: 117.594px;
+  margin-top: 17px;
+
+  /* vertical-align: baseline; */
+}
+
+.flecha-compra {
+    box-sizing: border-box;
+    display: flex;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 154.328px;
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  
+.trade-naw {
+    color: #b8add2;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    transition: color 0.25s ease-in-out 0s;
+  }
+  
+.flecha {
+  transition: color 0.25s ease-in-out 0s;
+  fill: #b8add2;
+  align-self: center;
+  box-sizing: border-box;
+  display: block;
+  flex-shrink: 0;
+  height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 20px;
+}
+.card1:hover .flecha {
+  fill: #1ec7d3;
+}
+.card1-earn:hover .flecha {
+  fill: #1ec7d3;
+}
+.card1:hover .trade-naw {
+  color: #1ec7d3;
+}
+.card1-earn :hover .trade-naw {
+  color: #1ec7d3;
+}
+/* segunda libretaaaaaaaaaa */
+
+
+
+
+.card1-earn {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 20%;
+    flex-direction: column;
+    height: 286px;
+    justify-content: space-between;
+    margin: 3px;
+    padding: 12px;
+    width: 150.594px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 120px;
+    row-gap: 45px;
+    
+  }
+  .swap-earn {
+    box-sizing: border-box;
+    display: block;
+    height: 44px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    width: 126.594px;
+    font-family: Kanit, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #f4eeff;
+    margin-top: -19px;
+  }
+.container-earn {
+    box-sizing: border-box;
+    display: block;
+    height: 417.188px;
+    margin: 48px 0 0;
+    min-height: 360px;
+    padding: 48px 24px 24px;
+    width: 1152px;
+    font: 16px/16px "Kanit", sans-serif;
+    background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+    border-radius: 24px;
+  }
+  .parte2-earn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 345.188px;
+    width: 848px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  .earn-general{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 286px;
+    margin: 0;
+    padding: 0;
+    width: 848px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  .container-cards-earn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 345.188px;
+    width: 1104px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+  /* libreta 3 gameeeeeeeeeeeeeeeeeee */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card1-game {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 20%;
+    flex-direction: column;
+    height: 292px;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 12px;
+    width: 250.67px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 120px;
+    row-gap: 45px;
+    gap: 0;
+  }
+  .swap-game {
+    box-sizing: border-box;
+    display: block;
+    height: 44px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    width: 226.594px;
+    font-family: Kanit, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #f4eeff;
+  }
+  .swap-text-game {
+    color: #f4eeff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    width: 226.594px;
+  
+    /* vertical-align: baseline; */
+  }
+.container-game {
+    box-sizing: border-box;
+    display: block;
+    height: 417.188px;
+    margin: 48px 0 0;
+    min-height: 360px;
+    padding: 48px 24px 24px;
+    width: 1152px;
+    font: 16px/16px "Kanit", sans-serif;
+    background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+    border-radius: 24px;
+  }
+  .parte2-game {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 345.188px;
+    width: 848px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  .game-general{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 286px;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    font: 400 16px/16px "Kanit", sans-serif;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 24px;
+    row-gap: 24px;
+    justify-content: space-between
+  }
+  .container-cards-game {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 345.188px;
+    width: 1104px;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: baseline;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
