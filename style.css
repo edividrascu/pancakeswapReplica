@@ -88,7 +88,8 @@ body img {
     padding: 48px 24px 24px;
     min-height: 360px;
     margin-top: 48px;
-    background-color: #343A5A;
+    background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+    border-radius: 24px;
 }
 .earn-container{
     display: flex;
@@ -545,18 +546,18 @@ body img {
    .img-trade{
     position: relative;
     /* right: 530px; */
-    top: -973px;
+    top: -999px;
     left: -19%;
     width: 340px;
    }
    .h1-trade{
     font-size: 41px;
     margin-left: -271px;
-    margin-top: 377px;
+    margin-top: 347px;
     width: 200px;
    }
 }
-@media screen and (min-width: 200px)and (max-width: 575px){
+@media screen and (min-width: 200px)and (max-width: 574px){
     .title{
         text-align: center;
     font-weight: 600;
@@ -578,10 +579,10 @@ body img {
     }
     .trade-container{
         box-sizing: border-box;
-        width: 98%;
+        width: 104%;
         flex-wrap: wrap;
         height: 1220px;
-        background-color: #0fc90f;
+        
         
     }
     .container-cards{
@@ -589,22 +590,22 @@ body img {
         
         justify-content: space-between;
         grid-template-columns: 1fr 1fr ; 
-        grid-template-rows: 1fr 1fr 1fr ;
+        /* grid-template-rows: 1fr 1fr 1fr ; */
         
         
         height: auto;
         flex-wrap: wrap;
         width:100%;
-        margin-top: calc(-41vh - 100px);
+        margin-top: calc(-34vh - 100px);
         margin-left: -205px;
         
         height: 80%;
     } 
     .h1-trade{
-       
+       position: relative;
        font-size: 32px;
        left: 40px;
-       top: calc(100px - 10vw);
+       top: 350px;
        width: 200px;
        
        
@@ -691,7 +692,138 @@ body img {
    }
   
 }
+@media screen and (min-width: 200px)and (max-width: 361px){
+    .h1-trade{
+      top: calc(340px - 10vw);
+    }
+    
+   
+}
+@media screen and (min-width: 200px)and (max-width: 351px){
+  .title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+  display: inline-block
+}
+.title-span{
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block;
+}
+.container-ecosystem{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:black;
+}
+.trade-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1800px;
+    
+    
+}
+.container-cards{
+    display: grid;
+    
+    justify-content: space-between;
+    grid-template-columns: 1fr  ; 
+    /* grid-template-rows: 1fr 1fr 1fr ; */
+    
+    
+    height: auto;
+    flex-wrap: wrap;
+    width:100%;
+    /* margin-top: calc(-84vh - 100px); para pantallas de 1080 */
+    margin-top: calc(-74vh - 100px);
+    margin-left: -155px;
+    
+    height: 100%;
+} 
+.h1-trade{
+   position: relative;
+   font-size: 32px;
+   left: 60px;
+   top: 350px;
+   width: 200px;
+   
+   
+   
+}
+.h1-a-card1{
+    margin-top: 4px;
+}
 
+.img-trade{
+position: relative;
+
+top: -1726px;
+left: 3.2vh;
+
+max-width: 340px; /* Ancho máximo de la imagen */
+width: 100%; /* Ajusta el ancho del contenedor al 100% */
+min-width: 255px; /* Ancho mínimo de la imagen *//* Ancho mínimo de la imagen */
+}
+.card1{
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+}
+.card3{
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+    
+
+}
+.card4{
+    width: calc(310px -1vw);
+    min-width: calc(70px + 30%);
+    font-size: 23px;
+    
+
+}
+.card5{
+    width: calc(310px -1vw);
+    min-width: calc(70px + 30%);
+    font-size: 20px;
+    
+    
+}
+.p-card1{
+    font-size: 14px;
+}
+
+.h1-a-card1{
+    font-size: 16px;
+}
+
+
+.default{
+   max-width: 70%;
+   min-width: 50%;
+}
+.hover{
+max-width: 70%;
+min-width: 50%;
+}
+.ultimaImg{
+   max-width: 40%;
+   min-width: 30%;
+}
+.ultimaImgHover{
+max-width: 40%;
+min-width: 30%;
+}
+    
+   
+}
 
 
 
