@@ -670,3 +670,146 @@ body img {
     column-gap: 32px;
     row-gap: 32px;
   }
+
+
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+  /* media queriiis respinsiveeeeeeeeeeeeee */
+
+  @media screen and (min-width: 850px) and (max-width: 1200px){
+    .container-ecosystem{
+      height: 2205px;
+    }
+    .container-main{
+      height: 2205px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }.container-trade{
+      
+        box-sizing: border-box;
+        display: block;
+        height: 32%;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 48px;
+        min-height: 360px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 48px;
+        width: 100%;
+
+      
+      
+    }
+    .container-cards{
+      
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        height: 655.188px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        width: 1111px;
+      
+      
+    }
+    .parte2-trade{
+      box-sizing: border-box;
+      display: flex;
+      min-width: 320px;
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      width: 811px;
+      
+    }
+    .title-trade{
+      box-sizing: border-box;
+      display: block;
+      height: 35.1875px;
+      margin-bottom: 24px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 12px;
+      padding-right: 0px;
+      padding-top: 0px;
+      width: 811px;
+
+    }
+    .cards-general {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width: 350px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      max-width: 820px;
+      width: 100%;
+      
+    }
+
+    .card1{
+      box-sizing: border-box;
+      display: flex;
+      flex-basis: calc(33.3% - 48px);
+      flex-direction: column;
+      flex-grow: 1;
+      height: 286px;
+      justify-content: space-between;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 12px;
+      width: 254.328px;
+      
+    }
+    .card4-trade{
+      width: 393.328px;
+    }
+    .card5-trade{
+      width: 393.328px;
+    }
+    .container-text-card1{
+      width: 100%;
+      
+    }
+    .swap{
+     width: 100%;
+    }
+    .swap-text{
+      width: 100%;
+    }
+  }
