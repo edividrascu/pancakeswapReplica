@@ -505,7 +505,7 @@ body img {
     width: 68%;
     margin-top: -240px;
     margin-left: 200px;
-    margin-right: 100px;
+    margin-right: 225px;
     
   }
   .container-cards2-earn {
@@ -544,6 +544,7 @@ body img {
     
   }
   .card3 {
+    margin-left: -25px;
     max-width: 70%;
     min-width: 210px;
     font-size: 23px;
@@ -622,8 +623,15 @@ body img {
     font-size: 23px;
   }
   .card3 {
-    width: 150%;
+    
+    min-width: calc(110% + 4vw);
     font-size: 23px;
+  }
+  .earn-card3 {
+    width: 150%;
+    min-width: 90%;
+    font-size: 21px;
+    margin-left: -20px;
   }
   
   .card4 {
@@ -669,9 +677,13 @@ body img {
   .h1-earn {
     font-size: 40px;
     margin-left: -10px;
-    margin-top: 400px;
+    margin-top: 420px;
     width: 200px;
   }
+  .p-card1-earn {
+    width: 50%;
+  }
+  
 }
 @media screen and (min-width: 200px) and (max-width: 613px) {
   .title {
@@ -689,8 +701,8 @@ body img {
     display: inline-block;
   }
   .container-ecosystem {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
     /* background-color: black; */
   }
   .trade-container,
@@ -699,6 +711,7 @@ body img {
     width: 104%;
     flex-wrap: wrap;
     height: 1320px;
+    margin-bottom: 4rem;
   }
   .container-cards {
     display: grid;
@@ -726,9 +739,9 @@ body img {
 
   .h1-trade {
     position: relative;
-    font-size: 32px;
+    font-size: 38px;
     left: 40px;
-    top: 380px;
+    top: 430px;
     width: 200px;
   }
   .h1-earn {
@@ -738,19 +751,8 @@ body img {
     top: 380px;
     width: 200px;
   }
-  .h1-a-card1 {
-    margin-top: 4px;
-  }
-  .card1 {
-    width: calc(310px -1vw);
-    min-width: calc(110px + 30%);
-    font-size: 23px;
-  }
-  .card2 {
-    width: calc(310px -1vw);
-    min-width: calc(95px + 30%);
-    font-size: 23px;
-  }
+  
+  
   .img-trade {
     position: relative;
 
@@ -771,14 +773,26 @@ body img {
     width: 100%; 
     min-width: 255px; 
   }
+ 
   .card1 {
     width: calc(310px -1vw);
     min-width: calc(90px + 30%);
     max-width: 230px;
     font-size: 23px;
+  } 
+  .card2 {
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    font-size: 23px;
   }
   .card3 {
     width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+  }
+  .earn-card3 {
+    width: calc(270px -1vw);
     min-width: calc(90px + 30%);
     max-width: 230px;
     font-size: 23px;
@@ -796,10 +810,11 @@ body img {
   .p-card1 {
     font-size: 14px;
   }
-
-  .h1-a-card1 {
-    font-size: 16px;
-  }
+  /* .p-card1-earn{
+    width: 80%;
+  } */
+  
+   
 
   .default {
     max-width: 70%;
@@ -817,10 +832,17 @@ body img {
     max-width: 40%;
     min-width: 30%;
   }
+  .h1-card1-earn {
+      width: calc(310px -1vw);
+      min-width: calc(95px + 30%);
+      min-width: none;
+      font-size: 19px;
+      
+    }
 }
 @media screen and (min-width: 200px) and (max-width: 361px) {
   .h1-trade {
-    top: calc(340px - 10vw);
+    top: calc(340px - -19vw);
   }
 }
 @media screen and (min-width: 200px) and (max-width: 351px) {
@@ -840,36 +862,62 @@ body img {
   }
   .container-ecosystem {
     
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
     background-color: black;
+    gap: 2rem;
   }
-  .trade-container {
+  .trade-container{
     box-sizing: border-box;
     width: 104%;
     flex-wrap: wrap;
     height: 1800px;
+   
   }
-  .container-cards {
+  .earn-container {
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1880px;
+   
+    
+  }
+  .container-cards{
     display: grid;
 
     justify-content: space-between;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr ; */
+    gap: 1rem;
 
     height: auto;
     flex-wrap: wrap;
     width: 100%;
     /* margin-top: calc(-84vh - 100px); para pantallas de 1080 */
-    margin-top: calc(-74vh - 100px);
+    margin-top: calc(-79vh - 100px);
     margin-left: -155px;
+
+    height: 100%;
+  }
+  .container-cards2-earn {
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    margin-top: calc(-130vh - 100px);
+    margin-left: 55px;
 
     height: 100%;
   }
   .h1-trade {
     position: relative;
-    font-size: 32px;
-    left: 60px;
+    font-size: 38px;
+    left: 30px;
     top: 350px;
     width: 200px;
   }
@@ -879,19 +927,31 @@ body img {
 
   .img-trade {
     position: relative;
-
-    top: -1726px;
+    
+    top: -1800px;
     left: 3.2vh;
 
-    max-width: 340px; /* Ancho máximo de la imagen */
-    width: 100%; /* Ajusta el ancho del contenedor al 100% */
-    min-width: 255px; /* Ancho mínimo de la imagen */ /* Ancho mínimo de la imagen */
+    max-width: 340px; 
+    width: 100%; 
+    min-width: 200px; 
+  }
+
+  .img-earn2 {
+    position: relative;
+    
+    top: -1880px;
+    left: 3.2vh;
+
+    max-width: 340px; 
+    width: 100%; 
+    min-width: 200px; 
   }
   .card1 {
+    min-width: none;
+    max-width: 320px;
+  }
+  .card2 {
     width: calc(310px -1vw);
-    min-width: calc(90px + 30%);
-    max-width: 230px;
-    font-size: 23px;
   }
   .card3 {
     width: calc(310px -1vw);
@@ -904,13 +964,13 @@ body img {
     min-width: calc(70px + 30%);
     font-size: 23px;
   }
-  .card5 {
-    width: calc(310px -1vw);
-    min-width: calc(70px + 30%);
-    font-size: 20px;
-  }
+  
+  
   .p-card1 {
     font-size: 14px;
+  }
+  .p-card1-5{
+    width: 50%;
   }
 
   .h1-a-card1 {
@@ -933,6 +993,29 @@ body img {
     max-width: 40%;
     min-width: 30%;
   }
+  
+  .card5 {
+    width: calc(310px -1vw);
+    min-width: calc(188px + 30%);
+    font-size: 20px;
+  }
+  
+}
+@media screen and (min-width: 284px) and (max-width: 351px) {
+  .h1-trade {
+    top: calc(320px - -19vw);
+  }
+  .h1-earn {
+    top: calc(320px - -29vw);
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 284px) {
+  .h1-trade {
+    top: calc(270px - -19vw);
+  }
+  .h1-earn {
+    top: calc(270px - -19vw);
+  }
 }
 
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
@@ -943,7 +1026,4 @@ body img {
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
-/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
-/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
-/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
-/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+
