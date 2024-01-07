@@ -97,7 +97,7 @@ body img {
   background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
   border-radius: 24px;
 }
-.game-NFT-container {
+.game-container{
   display: flex;
   flex-direction: column;
   border-radius: 24px;
@@ -105,8 +105,9 @@ body img {
   box-sizing: border-box;
   padding: 48px 24px 24px;
   min-height: 360px;
-  margin-top: -540px;
-  background-color: #343a5a;
+  margin-top: 15px;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+  border-radius: 24px;
 }
 .h1-trade {
   color: var(--colorPurple);
@@ -146,6 +147,17 @@ body img {
   
   
 }
+.card1-game{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 286;
+  
+  
+}
+
+
+
 .card1 a {
   text-decoration: none;
 }
@@ -210,7 +222,7 @@ body img {
   position: relative;
   width: 904px;
   height: 249px;
-  /* background-color: red; */
+  
 }
 .img-earn2 {
   position: relative;
@@ -235,7 +247,13 @@ body img {
   width: 100px;
   height: 286;
 }
-
+.card2-game{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 286;
+  margin-left: -30px;
+}
 .card2 a {
   text-decoration: none;
 }
@@ -268,10 +286,10 @@ body img {
   color: #1ec7d3;
 }
 
-.h1-game-nft {
+.h1-game {
   color: var(--colorPurple);
   display: flex;
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 24px;
   font-weight: 600;
   width: 700px;
@@ -286,7 +304,12 @@ body img {
   width: 102px;
   height: 286;
 }
-
+.card3-game{
+  position: relative;
+  display: inline-block;
+  width: 200px ;
+  height: 286;
+}
 .card3 a {
   text-decoration: none;
 }
@@ -450,11 +473,15 @@ body img {
   } */
 @media screen and (max-width: 1200px) {
   .trade-container,
-  .earn-container {
+  .earn-container{
     box-sizing: border-box;
     width: 100%;
     flex-wrap: wrap;
     height: 650px;
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 100%;
   }
   .container-cards {
     margin-top: -240px;
@@ -473,6 +500,10 @@ body img {
     height: auto;
     flex-wrap: wrap;
     width: 80%;
+  }
+  .container-cards-game{
+    height: 250px;
+    top: -300px;
   }
   .img-trade {
     position: relative;
@@ -579,6 +610,9 @@ body img {
     height: 1050px;
     
   }
+  .game-container{
+    height: 810px;
+  }
   .container-cards {
     display: grid;
 
@@ -613,7 +647,10 @@ body img {
     margin-right: 140px;
     margin-bottom: 5rem;
   }
-
+  .container-cards-game {
+    top: -250px;
+  }
+  
   .card1 {
     width: 80%;
     font-size: 23px;
@@ -668,6 +705,9 @@ body img {
     left: -21%;
     width: 340px;
   }
+  .img-game{
+    top: -770px;
+  }
   .h1-trade {
     font-size: 41px;
     margin-left: -271px;
@@ -680,6 +720,13 @@ body img {
     margin-top: 420px;
     width: 200px;
   }
+  .h1-game{
+    font-size: 37px;
+    margin-left: -210px;
+    margin-top: 390px;
+    width: 240px;
+  }
+  
   .p-card1-earn {
     width: 50%;
   }
@@ -703,7 +750,7 @@ body img {
   .container-ecosystem {
     margin-left: 15px;
     margin-right: 15px;
-    /* background-color: black; */
+    
   }
   .trade-container,
   .earn-container{
@@ -711,6 +758,13 @@ body img {
     width: 104%;
     flex-wrap: wrap;
     height: 1320px;
+    margin-bottom: 4rem;
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1020px;
     margin-bottom: 4rem;
   }
   .container-cards {
@@ -735,8 +789,14 @@ body img {
     margin-top: calc(-90vh - 100px);
     margin-left: 26px;
     height: 80%;
+    margin-bottom: 7.9rem;
   }
-
+  .container-cards-game {
+    top: -320px;
+    
+    width: 100%;
+    left: 100px;
+  }
   .h1-trade {
     position: relative;
     font-size: 38px;
@@ -748,10 +808,13 @@ body img {
     position: relative;
     font-size: 36px;
     left: 40px;
-    top: 380px;
+    top: 430px;
     width: 200px;
   }
-  
+  .h1-game{
+    left: 40px;
+    top: 380px;
+  }
   
   .img-trade {
     position: relative;
@@ -766,14 +829,17 @@ body img {
   .img-earn2 {
     position: relative;
 
-    top: -1296px;
+    top: -1330px;
     left: -1.9vh;
 
     max-width: 340px;
     width: 100%; 
     min-width: 255px; 
   }
- 
+  .img-game{
+    top: -1050px;
+    left: -40px;
+  }
   .card1 {
     width: calc(310px -1vw);
     min-width: calc(90px + 30%);
@@ -784,6 +850,13 @@ body img {
     width: calc(310px -1vw);
     min-width: calc(90px + 30%);
     font-size: 23px;
+  }
+  .card2-game{
+    position: relative;
+   width: 100%;
+   min-width: 10%;
+   margin-left: -35px;
+  
   }
   .card3 {
     width: calc(310px -1vw);
@@ -840,9 +913,21 @@ body img {
       
     }
 }
-@media screen and (min-width: 200px) and (max-width: 361px) {
+@media screen and (min-width: 350px) and (max-width: 390px) {
+ .card2-game{
+  width: 70%;
+ }
+}
+@media screen and (min-width: 200px) and (max-width: 371px) {
   .h1-trade {
     top: calc(340px - -19vw);
+  }
+  .h1-earn {
+    top:390px
+  }
+  .h1-game{
+    top: 340px;
+    left: 10px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 351px) {
