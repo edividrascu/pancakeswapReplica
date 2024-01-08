@@ -85,8 +85,6 @@
     flex-shrink: 0;
 }
 
-/**/
-
 .news-slider-content{
     white-space: nowrap;
     overflow-x: hidden;
@@ -162,9 +160,6 @@
     margin-top: 16px;
     max-height: 56px; 
 }
-
-/*fgdfg*/
-
 
 .news-slider-next{
     display: flex;
