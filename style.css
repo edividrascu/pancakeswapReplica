@@ -60,7 +60,7 @@
 .featured-news-slider{
     display: flex;
     width: 100%;
-    max-width: calc(1440px);
+    max-width: 1384px;
     padding: 0px 16px;
 }
 .news-slider-prev{
