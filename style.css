@@ -600,7 +600,14 @@ body img {
       
   }
 }
-
+@media screen and (min-width: 100px)  and (max-width: 967px){
+  .container-ecosystem a .default {
+    opacity: 0;
+  } 
+  .container-ecosystem a .hover {
+    opacity: 1;
+  } 
+}
 @media screen and (min-width: 614px) and (max-width: 850px) {
   .trade-container,
   .earn-container {
@@ -964,8 +971,12 @@ body img {
     width: 104%;
     flex-wrap: wrap;
     height: 1880px;
-   
-    
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1280px;
   }
   .container-cards{
     display: grid;
@@ -999,6 +1010,9 @@ body img {
 
     height: 100%;
   }
+  .container-cards-game{
+    margin-top: -900px;
+  }
   .h1-trade {
     position: relative;
     font-size: 38px;
@@ -1031,12 +1045,20 @@ body img {
     width: 100%; 
     min-width: 200px; 
   }
+  .img-game{
+    top: -1300px;
+  }
   .card1 {
     min-width: none;
     max-width: 320px;
   }
   .card2 {
     width: calc(310px -1vw);
+  }
+  .card2-game{
+  
+   margin-left: 0px;
+  
   }
   .card3 {
     width: calc(310px -1vw);
@@ -1100,6 +1122,14 @@ body img {
   }
   .h1-earn {
     top: calc(270px - -19vw);
+    
+  }
+  .h1-game {
+    top: calc(250px - -19vw);
+    font-size: 30px;
+  }
+  .card2-game, .card3-game {
+    width: 70%;
   }
 }
 
