@@ -1,0 +1,189 @@
+:root{
+    --colors-primary: #1fc7d4;
+    --colors-invertedContrast: #191326;
+    --colors-gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
+    --colors-text: #f4eeff;
+    --colors-cardBorder: #383241;
+    --colors-backgroundAlt: #27262c;
+    --colors-secondary: #a881fc;
+    --colors-background: #08060b;
+    --colors-textSubtle: #b8add2;
+    --colors-primary: #1fc7d4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100%;
+}
+#featured-news{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.featured-news-container{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 48px 0px;
+    margin: 0px;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    background: var(--colors-background);
+}
+.featured-news-title{
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: calc(1440px);
+    padding: 0px 16px;
+}
+.featured-news-title p:first-child{
+    color: var(--colors-text);
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.featured-news-title p:last-child{
+    color: var(--colors-secondary);
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.featured-news-slider{
+    display: flex;
+    width: 100%;
+    max-width: calc(1440px);
+    padding: 0px 16px;
+}
+.news-slider-prev{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+.news-slider-prev div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    border: 2px solid var(--colors-primary);
+    cursor: pointer;
+}
+.news-slider-prev div svg{
+    align-self: center;
+    fill: var(--colors-primary);
+    color: var(--colors-textSubtle);
+    flex-shrink: 0;
+}
+
+/**/
+
+.news-slider-content{
+    white-space: nowrap;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 24px;
+    padding-bottom: 5px;
+}
+.news-slide{
+    vertical-align: top;
+    width: 280px;
+    height: 387px;
+    border-radius: 24px;
+    background: var(--colors-backgroundAlt);
+    box-shadow: 0px 2px 0px 0px var(--colors-cardBorder);
+    display: inline-block;
+    margin-right: 34px;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.news-slide>div:first-child{
+    height: 200px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.news-slide div:first-child img{
+    flex-shrink: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+.news-slide div:nth-child(2){
+    padding: 20px;
+    height: 147px;
+    overflow: hidden;
+}
+.news-slide div:nth-child(2)>div{
+    display: flex;
+    justify-content: space-between;
+}
+.news-slide div:nth-child(2)>div>p{
+    color: var(--colors-textSubtle);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+}
+.news-slide div:nth-child(2)>p{
+    color: var(--colors-text);
+    font-weight: 600;
+    margin-top: 16px;
+    line-height: 120%;
+    font-size: 16px;
+    min-height: 66px;
+    white-space: pre-wrap;
+}
+.news-slide div:nth-child(2)>div:last-child{
+    color: var(--colors-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: pre-wrap;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 16px;
+    max-height: 56px; 
+}
+
+/*fgdfg*/
+
+
+.news-slider-next{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.news-slider-next div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    border: 2px solid var(--colors-primary);
+    cursor: pointer;
+}
+.news-slider-next div svg{
+    align-self: center;
+    fill: var(--colors-primary);
+    color: var(--colors-textSubtle);
+    flex-shrink: 0;
+}
