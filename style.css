@@ -21,6 +21,7 @@
     z-index: 1;
     padding: 48px 16px;
     background-color: #08060b;
+    overflow-x: hidden;
 }
 .cake-animation-container{
     margin: 0px;
@@ -180,11 +181,11 @@
     font-weight: 600; 
     position: relative;
     z-index: 99;
-    box-shadow: -51px 50px 50px 5px #08060b;
 }
 .cake-ecosystem-list-container-overflow{
     overflow: hidden;
     height: 210px;
+    mask-image: linear-gradient(to bottom, transparent, black 80px, black calc(100% - 80px), transparent);
 }
 .cake-ecosystem-list-container{
     margin-bottom: 8px;
@@ -291,11 +292,11 @@
     font-weight: 600;  
     position: relative;
     z-index: 99;
-    box-shadow: -5px 50px 50px 5px #08060b;
 }
 .cake-partners-list-container-overflow{
     overflow: hidden;
     height: 210px;
+    mask-image: linear-gradient(to bottom, transparent, black 80px, black calc(100% - 80px), transparent);
 }
 .cake-partners-list-container{
     margin-bottom: 8px;
@@ -603,8 +604,6 @@
     }
     .cake-child-3-text-containers>div{
         width: 33%; 
-    }
-    .cake-child-3-text-containers div {
         padding: 0;
     }
     .cake-child-3-text-containers div p:first-child{
@@ -621,6 +620,18 @@
     }
 }
 
+@media (max-width: 852px){
+    .cake-child-1-title p:first-child {
+        font-size: 32px;
+    }
+    .cake-child-1-title p:nth-child(2){
+        font-size: 32px; 
+    }
+    .cake-child-1-text p{
+        font-size: 16px;
+    }
+}
+
 @media(max-width: 576px){
     .cake-child-1-title{
         text-align: center;
@@ -628,12 +639,18 @@
     }
     .cake-child-1-title p:first-child{
         white-space: normal;
-        font-size: 32px;
     }
-    .cake-child-1-title p:nth-child(2){
-        font-size: 32px;
+    .cake-child-3-text-containers>div{
+        width: 50%;
+        border-right:none;
     }
-    .cake-child-1-text p{
-        font-size: 16px;
+    .cake-child-3-text-containers div p{
+        font-size: 14px;
+    }
+    .cake-child-3-text-containers div:not(:nth-child(2n)):not(:last-child) p{
+        border-right: 1px solid var(--colors-cardBorder);
+    }
+    .cake-child-3-text-containers div:not(:last-child){
+        border-bottom: 1px solid var(--colors-cardBorder);
     }
 }
