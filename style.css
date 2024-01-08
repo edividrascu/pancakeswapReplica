@@ -1137,6 +1137,74 @@ body img {
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */ /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
 
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.container-dark {
+  background-color: #b16f6f;
+  color: #000000;
+}
+.ecosystem-dark {
+  background-color: #ffffff;
+}
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Estilos del checkbox */
+
+
+#toggleBtn + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#toggleBtn + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+}
+
+#toggleBtn:checked + label:before {
+  background-color: #ffffff; /* Cambia el fondo cuando el checkbox está marcado */
+}
+
+#toggleBtn + label:after {
+  content: 'DARK MODE';
+  position: absolute;
+  left: 30px;
+  top: -2px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#toggleBtn:checked + label:after {
+  color: #fff; /* Cambia el color del texto cuando el checkbox está marcado */
+}
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+
+
+
+
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
