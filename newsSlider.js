@@ -12,7 +12,6 @@ prevButton.addEventListener("click",function() {
     for(i=0;i<totalSlides;i++){
         slides[i].style.transform = `translate(${-width*(totalSlides-countSlides)}px,0)`
         slides[i].style.transition=" all 500ms" 
-        console.log(slides[i].style.transform)
     }
 });
 
@@ -21,6 +20,5 @@ nextButton.addEventListener("click",function() {
     for(i=0;i<totalSlides;i++){
         slides[i].style.transform = `translate(${-width*(totalSlides-countSlides)}px,0)`
         slides[i].style.transition=" all 500ms" 
-        console.log(slides[i].style.transform)
     }
 })
