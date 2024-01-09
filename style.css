@@ -15,6 +15,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 5000px;
 }
 .background-ecosystem {
   background-color: black;
@@ -175,7 +176,7 @@ body img {
   opacity: 1;
   top: 0;
   left: 0;
-  transition: opacity 1s ease-in-out 10s;
+  transition: opacity 1s ease-in-out 30s;
 }
 
 .card1:hover .hover {
@@ -271,7 +272,7 @@ body img {
   opacity: 1;
   top: 0;
   left: 0;
-  transition: opacity 1s ease-in-out 10s;
+  transition: opacity 1s ease-in-out 30s;
 }
 
 .card2:hover .hover {
@@ -327,7 +328,7 @@ body img {
   opacity: 1;
   top: 0;
   left: 0;
-  transition: opacity 1s ease-in-out 10s;
+  transition: opacity 1s ease-in-out 30s;
 }
 
 .card3:hover .hover {
@@ -379,7 +380,7 @@ body img {
   opacity: 1;
   top: 0;
   left: 0;
-  transition: opacity 1s ease-in-out 10s;
+  transition: opacity 1s ease-in-out 30s;
 }
 
 .card4:hover .hover {
@@ -418,7 +419,7 @@ body img {
   opacity: 1;
   top: 0;
   left: 0;
-  transition: opacity 1s ease-in-out 10s;
+  transition: opacity 1s ease-in-out 30s;
 }
 
 .card5:hover .hover {
@@ -445,32 +446,66 @@ body img {
     top: -17px;
     font-size: 40px;
 }
+
+
+/* ESTILOS PARA EL BOTON DE VOLVER AL TOP */
+.container-boton-top {
+  position: fixed;
+  right: 18px;
+  bottom: calc(110px + env(safe-area-inset-bottom));
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.buton-to-top {
+  position: relative;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 0px 24px;
+  background-color: #1fc7d4;
+  color: #191326;
+  width: 48px;
+  height: 48px;
+  filter: none !important;
+}
+.buton-to-top:hover{
+  opacity: 0.7;
+}
+.svg-boton-top{
+  align-self: center;
+  fill: #191326;
+  color: #191326;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+/* ESTILOS PARA EL BOTON DE VOLVER AL TOP */
+
+
+
+
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
 /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
 
 /* !!!! en min si ponemos min950px y la ventana es mas pequeña de 950 ya no se aplican los estilos */
 
-/* @media screen and (max-width: 968px) {
-    .container-cards .hover {
-        opacity: 1;
-        display: block;
-    }                              
-    
-    .container-cards .default {
-        opacity: 0;
-        
-    }
-    .container-cards2-earn .hover {
-        opacity: 1;
-        display: block;
-    }                              
-    
-    .container-cards2-earn .default {
-        opacity: 0;
-        
-    }
-  } */
+
 @media screen and (max-width: 1200px) {
   .trade-container,
   .earn-container{
@@ -649,13 +684,13 @@ body img {
     height: auto;
     flex-wrap: wrap;
     width: 80%;
-    margin-top: calc(-67vh - 100px);
+    margin-top: -952px;
     margin-left: 30px;
     margin-right: 140px;
     margin-bottom: 5rem;
   }
   .container-cards-game {
-    top: -250px;
+    top: -300px;
   }
   
   .card1 {
@@ -781,7 +816,7 @@ body img {
     height: auto;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: calc(-39vh - 100px);
+    margin-top: -598px;
     margin-left: -205px;
     height: 80%;
     margin-bottom: 3rem;
@@ -793,10 +828,10 @@ body img {
     height: auto;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: calc(-90vh - 100px);
+    margin-top: -1265px;
     margin-left: 26px;
     height: 80%;
-    margin-bottom: 7.9rem;
+    margin-bottom: 10rem;
   }
   .container-cards-game {
     top: -320px;
@@ -920,12 +955,10 @@ body img {
       
     }
 }
-@media screen and (min-width: 350px) and (max-width: 390px) {
- .card2-game{
-  width: 70%;
- }
-}
-@media screen and (min-width: 200px) and (max-width: 371px) {
+/* @media screen and (min-width: 350px) and (max-width: 390px) {
+ 
+} */
+@media screen and (min-width: 200px) and (max-width: 395px) {
   .h1-trade {
     top: calc(340px - -19vw);
   }
@@ -936,6 +969,9 @@ body img {
     top: 340px;
     left: 10px;
   }
+  .card2-game{
+  width: 70%;
+ }
 }
 @media screen and (min-width: 200px) and (max-width: 351px) {
   .title {
@@ -989,9 +1025,9 @@ body img {
     flex-wrap: wrap;
     width: 100%;
     /* margin-top: calc(-84vh - 100px); para pantallas de 1080 */
-    margin-top: calc(-79vh - 100px);
+    margin-top: -1165px;
     margin-left: -155px;
-
+    margin-bottom: 7rem;
     height: 100%;
   }
   .container-cards2-earn {
@@ -1005,13 +1041,14 @@ body img {
     flex-wrap: wrap;
     width: 100%;
     
-    margin-top: calc(-130vh - 100px);
+    margin-top: -1799px;
     margin-left: 55px;
+    margin-bottom: 10rem;
 
     height: 100%;
   }
   .container-cards-game{
-    margin-top: -900px;
+    margin-top: -910px;
   }
   .h1-trade {
     position: relative;
@@ -1019,6 +1056,10 @@ body img {
     left: 30px;
     top: 350px;
     width: 200px;
+  }
+  .h1-earn {
+    font-size: 40px;
+    top: 421px;
   }
   .h1-a-card1 {
     margin-top: 4px;
@@ -1056,7 +1097,7 @@ body img {
     width: calc(310px -1vw);
   }
   .card2-game{
-  
+    width: 70%;
    margin-left: 0px;
   
   }
@@ -1108,20 +1149,22 @@ body img {
   }
   
 }
-@media screen and (min-width: 284px) and (max-width: 351px) {
+@media screen and (min-width: 295px) and (max-width: 351px) {
   .h1-trade {
     top: calc(320px - -19vw);
   }
-  .h1-earn {
-    top: calc(320px - -29vw);
+  .container-cards2-earn {
+    top: 1400px;
   }
+  
 }
-@media screen and (min-width: 200px) and (max-width: 284px) {
+@media screen and (min-width: 200px) and (max-width: 317px) {
+  
   .h1-trade {
     top: calc(270px - -19vw);
   }
   .h1-earn {
-    top: calc(270px - -19vw);
+    top: calc(293px - -19vw);
     
   }
   .h1-game {
@@ -1130,6 +1173,9 @@ body img {
   }
   .card2-game, .card3-game {
     width: 70%;
+  }
+  .container-cards2-earn {
+    margin-bottom: 14rem;
   }
 }
 

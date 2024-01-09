@@ -1,23 +1,23 @@
-const toggleBtn = document.getElementById('toggleBtn');
-const body = document.body;
-const container = document.querySelector('.container');
-const containerEcosystem = document.querySelector('.container-ecosystem');
-// Verifica si hay una preferencia almacenada en localStorage
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  body.classList.add('dark-mode');
-  container.classList.add('container-dark');
-  containerEcosystem.classList.add('ecosystem-dark');
-}
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    var scrollToTopButton = document.querySelector('.container-boton-top');
 
-toggleBtn.addEventListener('click', () => {
-  // Alternar clases y guardar preferencia en localStorage
-  body.classList.toggle('dark-mode');
-  container.classList.toggle('container-dark');
-  containerEcosystem.classList.toggle('ecosystem-dark');
-  
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('dark-mode', 'enabled');
-  } else {
-    localStorage.setItem('dark-mode', 'disabled');
+    // Muestra u oculta el botón dependiendo de la posición de scroll
+    if (window.scrollY > 200) {
+      scrollToTopButton.style.display = 'block';
+    } else {
+      scrollToTopButton.style.display = 'none';
+    }
+  });
+
+  const scrollToTopButton = document.querySelector('.buton-to-top');
+
+  if (scrollToTopButton) {
+    scrollToTopButton.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
 });
