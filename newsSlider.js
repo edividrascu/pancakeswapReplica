@@ -8,23 +8,24 @@ let countSlides = totalSlides;
 let slideStyle = window.getComputedStyle(slides[0]);
 let slideWidth = slides[0].offsetWidth + parseFloat(slideStyle.marginRight);
 
-let screenWidth = window.innerWidth;
 
 function countClicks() {
+    let screenWidth = window.innerWidth;
     let sliderWidth = sliderContainer.offsetWidth;
     if(screenWidth>sliderWidth){
         screenWidth = sliderWidth
     }else{}
 
     let maxSlides = Math.floor(screenWidth/slideWidth);
-    console.log(countSlides)
+    //console.log(countSlides)
+    //console.log(maxSlides)
     let maxClicks = countSlides-maxSlides;
     return maxClicks
 }
 
 nextButton.addEventListener("click",function() {
     let remainingClicks = countClicks()
-    console.log(remainingClicks)
+    //console.log(remainingClicks)
     if(remainingClicks>=1){
         countSlides -= 1
         for(i=0;i<totalSlides;i++){
@@ -37,7 +38,7 @@ nextButton.addEventListener("click",function() {
 
 prevButton.addEventListener("click",function() {
     let remainingClicks = countClicks()
-    console.log(remainingClicks)
+    //console.log(remainingClicks)
     if(countSlides<totalSlides){
         countSlides += 1
         for(i=0;i<totalSlides;i++){
