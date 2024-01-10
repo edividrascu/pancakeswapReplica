@@ -25,8 +25,8 @@ function countClicks() {
 
 nextButton.addEventListener("click",function() {
     let remainingClicks = countClicks()
-    console.log(remainingClicks)
-    console.log(countSlides)
+    // console.log(remainingClicks)
+    // console.log(countSlides)
     if(remainingClicks>=1 && (remainingClicks+countSlides)>2){
         countSlides -= 1
         for(i=0;i<totalSlides;i++){
