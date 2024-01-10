@@ -25,8 +25,9 @@ function countClicks() {
 
 nextButton.addEventListener("click",function() {
     let remainingClicks = countClicks()
-    //console.log(remainingClicks)
-    if(remainingClicks>=1){
+    console.log(remainingClicks)
+    console.log(countSlides)
+    if(remainingClicks>=1 && (remainingClicks+countSlides)>2){
         countSlides -= 1
         for(i=0;i<totalSlides;i++){
             slides[i].style.transform = `translate(${-(slideWidth*(totalSlides-countSlides))}px,0)`
