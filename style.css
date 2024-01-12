@@ -64,6 +64,7 @@
     position: absolute;
     width: 120px;
     top: 20px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes;
 }
 .join-dex-backgound>div img:nth-child(2){
     left: calc(50% + 180px);
@@ -71,6 +72,7 @@
     width: 120px;
     top: 16px;
     right: 5px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes2;
 }
 .join-dex-backgound>div img:nth-child(3){
     left: calc(50% + 190px);
@@ -78,12 +80,14 @@
     position: absolute;
     bottom: 10px;
     right: -60px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes3;
 }
 .join-dex-backgound>div img:nth-child(4){
     left: calc(50% - 310px);
     width: 140px;
     position: absolute;
     bottom: 10px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes4;
 }
 .join-dex-text-button{
     width: 100%;
@@ -135,5 +139,53 @@
 @media(max-width:567px){
     .join-dex-text-button{
         height: 480px;  
+    }
+}
+@keyframes movingpancakes{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(3px) translateY(2px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes2{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(3px) translateY(3px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes3{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(8px) translateY(6px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes4{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(1px) translateY(1px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
     }
 }
