@@ -131,6 +131,9 @@
     color: var(--colors-invertedContrast);
     margin-top: 24px;
 }
+.join-dex-button:hover{
+    opacity: 70%;
+}
 @media(max-width:968px){
     .join-dex-text-button{
         height: 560px;  
