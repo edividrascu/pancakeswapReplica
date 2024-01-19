@@ -17,11 +17,20 @@
     font-family: 'Kanit', sans-serif;
     font-size: 100%;
 }
-#dummy-section{
-    margin-top: 150px;
+#astronauta{
+    background: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%);
+    padding-top: 48px;
     display: flex;
+    position: relative;
+    flex-direction: column;
     align-items: center;
-    justify-self: center;
+    z-index: 1;
+    padding: 48px 0px;
+}
+.section-astronauta-container{
+    margin: 0px;
+    overflow: visible;
+    padding: 16px;
 }
 .automatic-banner-container{
     padding-top: 0px;
@@ -30,25 +39,28 @@
 }
 .automatic-banner{
     position: relative;
-    width: 100%;
+    padding: 20px;
     height: 100%;
     z-index: 1;
     display: flex;
     transition-property: transform;
     transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
     box-sizing: content-box;
-
 }
 .automatic-banner-slide{
     width: 1168px;
     position: relative;
-    padding: 24px;
+    padding: 0 24px;
     height: 100%;
     max-height: 192px;
     min-height: 181px;
     display: flex;
     z-index: 1;
+    display: none;
     
+}
+.automatic-banner-slide:first-child{
+    display: flex;
 }
 .automatic-banner-slide>div:first-of-type{
     padding-top: 40px;
@@ -542,7 +554,7 @@
 .automatic-banner-slide:nth-child(5)>div>button p{
     color:black;
 }
-.automatic-banner-second{
+.automatic-banner-fifth{
     min-height: 100%;
     width: 100%;
     right: 0px;
@@ -550,7 +562,7 @@
     z-index: 1;  
     position: absolute;
 }
-.automatic-banner-second>img:first-child{
+.automatic-banner-fifth>img:first-child{
     overflow: hidden;
     right: 0px;
     bottom: 2px;
