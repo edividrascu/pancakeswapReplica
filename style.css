@@ -31,6 +31,7 @@
     margin: 0px;
     overflow: visible;
     padding: 16px;
+    max-width: 100%;
 }
 .automatic-banner-container{
     padding-top: 0px;
