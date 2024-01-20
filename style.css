@@ -621,6 +621,125 @@
     background-color: #ffffff;
 }
 
+/*************************** Segunda parte ***************************************/
+
+.astronauta-container{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 0px;
+    position: relative;
+}
+.bunny-astronauta-text{
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+}
+
+.bunny-astronauta-text>div:first-child{
+    color: var(--colors-text);
+    font-weight: 400;
+    line-height: 1.5;
+    padding-right: 10px;
+    margin-bottom: 16px;
+    text-align: left;
+    font-size: 88px;  
+}
+.bunny-astronauta-text>div:first-child>div{
+    display: inline-block;
+}
+.bunny-astronauta-text>div:first-child>div:nth-child(2){
+    color: var(--colors-secondary); 
+}
+.bunny-astronauta-text>div:nth-child(2){
+    font-size: 24px;
+    color: rgb(184, 173, 210);
+    margin-bottom: 24px;
+    text-align: left;
+    line-height: 110%;
+    font-weight: 600;
+    max-width: 600px;
+}
+.bunny-astronauta-text>div:nth-child(3){
+    display: flex;
+    justify-content: start;
+}
+.bunny-astronauta-text>div:nth-child(3)>button:first-child{
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: var(--colors-primary);
+    color: var(--colors-invertedContrast);
+    margin-right: 8px; 
+}
+.bunny-astronauta-text>div:nth-child(3)>button:nth-child(2){
+    position: relative;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    border-color: var(--colors-primary);
+    box-shadow: none;
+    color: var(--colors-primary);
+}
+.bunny-astronauta-video-container{
+    flex: 1 1 0%;
+    display: flex;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.bunny-astronauta-video{
+    position: relative;
+    width: 605px;
+    height: 736px;
+    overflow: hidden;
+    margin-bottom: -100px;
+    margin-right: -100px; 
+}
+.bunny-astronauta-video>canvas{
+    width: 1080;
+    height: 1080;
+    transform: scale(0.6) translate(-50%, -50%);
+    transform-origin: left top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 /* Responsive **********************************************************************/
 @media (max-width: 825px){
     .automatic-banner-slide-background>img:nth-child(3){
