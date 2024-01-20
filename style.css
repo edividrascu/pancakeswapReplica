@@ -58,7 +58,18 @@
     display: flex;
     z-index: 1;
     display: none;
-    
+    transition: all 1s linear 1s;
+}
+@keyframes bannerOpacity {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 .automatic-banner-slide:first-child{
     display: flex;
