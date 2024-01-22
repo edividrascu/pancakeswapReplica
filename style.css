@@ -47,6 +47,7 @@
     transition-property: transform;
     transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
     box-sizing: content-box;
+    justify-content: center;
 }
 .automatic-banner-slide{
     width: 1168px;
@@ -741,7 +742,7 @@
 }
 
 /* Responsive **********************************************************************/
-@media (max-width: 825px){
+@media (max-width: 1000px){
     .automatic-banner-slide:first-child>div:first-child>div:nth-child(2){
         visibility: hidden;
     }
@@ -753,9 +754,6 @@
     }
     .automatic-banner-slide-background>img:nth-child(3){
         right: 0%;
-    }
-    .automatic-banner-slide:nth-child(2)>div:first-child>div:nth-child(2){
-        font-size: 24px;
     }
     .automatic-banner-slide:nth-child(2)>div:first-child>div:nth-child(3){
         z-index: 10;
@@ -769,16 +767,6 @@
     }
     .automatic-banner-second>img:nth-child(4){
         visibility: hidden;
-    }
-    .automatic-banner-second>img:nth-child(6){
-        visibility: hidden;
-    }
-    .automatic-banner-slide:nth-child(3)>div:first-child>div:nth-child(2){
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-    .automatic-banner-slide:nth-child(3)>div:first-child>div:nth-child(3){
-        display: none;
     }
     .automatic-banner-slide:nth-child(3)>div>div>button p{
         color: #08060b;
@@ -821,7 +809,111 @@
         z-index: -1;
     }
     .automatic-banner-fourth>img:nth-child(2){
-        width: 384px;
-        height: 200px;
+        right: 0;
     }
+    .automatic-banner-slide:nth-child(2)>div:first-child>div{
+        z-index: 10;
+    }
+    .automatic-banner-fifth{
+        z-index: -1;
+    }
+}
+@media (max-width: 825px){
+    .automatic-banner-slide>div:first-of-type{
+        z-index: 10;
+    }
+    .automatic-banner-slide-background{
+        z-index: -1;
+    }
+    .automatic-banner-slide:nth-child(2)>div:first-child>div:nth-child(3) {
+        font-size: 16px;
+    }
+    .automatic-banner-second>img:nth-child(6){
+        visibility: hidden;
+    }
+    .automatic-banner-slide:nth-child(3)>div:first-child>div:nth-child(3){
+        display: none;
+    }
+    .automatic-banner-slide:nth-child(3)>div:first-child>div:nth-child(2){
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .automatic-banner-fourth>img:nth-child(2){
+        right: 0;
+        content: url("imagenes-banner/game-mobile-bunny.webp");
+    }
+    .automatic-banner-fifth>img:first-child{
+        width: 280px;
+        height: 120%;
+    }
+}
+
+@media (max-width: 680px){
+    .automatic-banner-slide:first-child>div:first-child>div:nth-child(2){
+        font-size: 24px;
+    }
+    .automatic-banner-slide:nth-child(2)>div:first-child>div:nth-child(2){
+        font-size: 24px;
+        width: 70%;
+    }
+    .automatic-banner-slide:nth-child(2)>div>div:nth-child(2) {
+        -webkit-text-stroke: 1.5px rgb(118, 69, 217);
+    }
+}
+
+@media (max-width: 576px){
+    .automatic-banner-slide:first-of-type>div>div:nth-child(3){
+        display: none;
+    }
+    .automatic-banner-slide>div>div>span:first-child img {
+        width: 90px;
+    }
+    .automatic-banner-slide>div:first-child div>span:last-child img {
+        width: 52px;
+    }
+    .automatic-banner-slide>div>button{
+        height: 32px;
+    }
+    .automatic-banner-slide-background>img:nth-child(3){
+        width: 152px;
+        height: 102px;
+    }
+    .automatic-banner-second>img:first-child{
+        right: 0px;
+    }
+    .automatic-banner-second>img:nth-child(2){
+        right: 150px;
+        transform: scaleX(-1);
+        animation: none;
+    }
+    .automatic-banner-second>img:nth-child(3){
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        width: unset;
+        height: unset;
+    }
+    .automatic-banner-slide:nth-child(4)>div>div:nth-child(2){
+        visibility: hidden;
+        height: 30px;
+    }
+    .automatic-banner-slide>div:first-child>div:first-child{
+        margin-bottom: 0;
+    }
+    .automatic-banner-slide:nth-child(4)>div>div:nth-child(2)::before{
+        visibility: visible;
+        content: "Gaming Marketplace";
+        background: linear-gradient(28deg, rgb(255, 178, 55) -0.47%, rgb(255, 235, 55) 54.35%) text;
+    }
+    .automatic-banner-slide:nth-child(5)>div:first-child>div:nth-child(2){
+        font-size: 20px;
+        width: 30%;
+    }
+    .automatic-banner-fifth>img:first-child{
+        width: 208px;
+        height: 208px;
+        content: url("imagenes-banner/perpetualMobile.webp");
+        top: -40px;
+    }
+    
 }
