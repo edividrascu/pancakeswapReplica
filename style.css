@@ -25,18 +25,19 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    padding: 48px 0px;
+    padding: 48px 16px;
+    overflow: hidden;
 }
 .section-astronauta-container{
     margin: 0px;
     overflow: visible;
-    padding: 16px;
     max-width: 100%;
 }
 .automatic-banner-container{
     padding-top: 0px;
     margin-top: -32px;
     margin-bottom: 30px;
+    max-width: 1200px;
 }
 .automatic-banner{
     position: relative;
@@ -732,8 +733,8 @@
     margin-right: -100px; 
 }
 .bunny-astronauta-video>canvas{
-    width: 1080;
-    height: 1080;
+    width: 1080px;
+    height: 1080px;
     transform: scale(0.6) translate(-50%, -50%);
     transform-origin: left top;
     position: absolute;
@@ -818,6 +819,29 @@
         z-index: -1;
     }
 }
+@media (max-width: 1200px){
+
+    .bunny-astronauta-text>div:first-child{
+        font-size: 64px;
+        font-size: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .bunny-astronauta-text>div:first-child>div{
+        display: flex;
+        max-height: 64px;
+        align-items: center;
+    }
+}
+@media (max-width: 968px){
+    .bunny-astronauta-text>div:first-child>div{
+        font-size: 40px;
+        display: flex;
+        max-height: 40px;
+        align-items: center;
+    }
+}
 @media (max-width: 825px){
     .automatic-banner-slide>div:first-of-type{
         z-index: 10;
@@ -845,6 +869,35 @@
     .automatic-banner-fifth>img:first-child{
         width: 280px;
         height: 120%;
+    }
+    .astronauta-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .bunny-astronauta-text>div:first-child{
+        justify-content: center;
+    }
+    .bunny-astronauta-text>div:nth-child(2){
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .bunny-astronauta-text>div:nth-child(3){
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .bunny-astronauta-video{
+        width: 500px;
+        height: 500px;
+        position: unset;
+        margin-bottom: 24px;
+    }
+    .bunny-astronauta-video>canvas{
+        transform: scale(0.45) translate(-50%, -50%);
     }
 }
 
@@ -878,6 +931,9 @@
         width: 152px;
         height: 102px;
     }
+    .automatic-banner-slide:nth-child(2)>div:first-child>div:nth-child(3){
+        display: none;
+    }
     .automatic-banner-second>img:first-child{
         right: 0px;
     }
@@ -905,6 +961,9 @@
         content: "Gaming Marketplace";
         background: linear-gradient(28deg, rgb(255, 178, 55) -0.47%, rgb(255, 235, 55) 54.35%) text;
     }
+    .automatic-banner-slide:nth-child(4)>div>div:nth-child(2){
+        height: 50px;
+    }
     .automatic-banner-slide:nth-child(5)>div:first-child>div:nth-child(2){
         font-size: 20px;
         width: 30%;
@@ -914,6 +973,19 @@
         height: 208px;
         content: url("imagenes-banner/perpetualMobile.webp");
         top: -40px;
+    }
+
+    .bunny-astronauta-text>div:first-child>div{
+        font-size: 32px;
+    }
+    .bunny-astronauta-text>div:nth-child(2){
+        font-size: 20px;
+    }
+    .bunny-astronauta-video{
+        margin-bottom: 0px;
+    }
+    .bunny-astronauta-video>canvas{
+        transform: scale(0.33) translate(-50%, -50%);
     }
     
 }
