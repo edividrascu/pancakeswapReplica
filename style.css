@@ -15,6 +15,25 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.eLkFjc {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    bottom: 0px;
+    
+}
+.eLkFjc svg {
+    fill: #0b4576;
+    width: 100%;
+    height: 100%;
+    max-height: 48px;
+    box-sizing: border-box;
+    align-self: center;
+    flex-shrink: 0;
+    max-height: 48px;
+    
+}
 .container-general-community{
     box-sizing: border-box;
     display: block;
@@ -29,7 +48,7 @@ a {
     font-stretch: 100%;
     line-height: 16px;
     border: none;
-    margin-top: 10rem;
+    
     /* borrar el margin top aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 }
@@ -89,7 +108,7 @@ a {
 }
 .container-img-right{
     position: absolute;
-    width: 520px;
+    width: 220px;
     height: 520px;
     left: calc(50% - 166px);
     top: -206px;
@@ -277,7 +296,9 @@ a {
     line-height: 16px;
     vertical-align: baseline;
     border: none;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    
+    
     
 }
 .h2-1{
@@ -335,7 +356,7 @@ a {
 .container-cards{
     display: flex;
     flex-flow: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
@@ -412,13 +433,13 @@ a {
        
 }
 .container-card2-right{
-
+    width: 340px;
     border-radius: 32px;
     border: 1px solid #383241;
     background: #27262c;
     box-shadow: 0px 2px 0px 0px #383241;
     padding: 24px;
-    max-width: 340px;
+    
     height: 345px;
     box-sizing: border-box;
 }
@@ -673,7 +694,7 @@ a {
 }
 
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 300px){
 
     .container-img-right{
         transform: scale(1);
@@ -699,6 +720,35 @@ a {
     }
 
 }
+@media screen and (max-width: 430px){
+    .container-card1-left{
+        max-width: 80%;
+        min-width: 10px;
+    }
+    .container-card2-right {
+        max-width: 80%;
+        min-width: 10px;
+    }
+    .h1-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .second-flex{
+
+    }
+    .ajustes-svg{
+        width: 32px;
+        height: 32px;
+    }
+
+}
+@media screen and (min-width: 825px){
+
+    .container-cards{
+        flex-direction: row;
+    }
+}
 @media screen and (min-width: 968px){
 
     .container-img-right{
@@ -712,9 +762,7 @@ a {
             
         width: 100%;
     }
-    .first-flex{
-        
-    }
+    
 }
 @media screen and (min-width: 1200px){
 
