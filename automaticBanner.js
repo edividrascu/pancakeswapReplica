@@ -36,6 +36,47 @@ setInterval(()=>{
 Array.from(bullets).forEach((bullet,index) => {
     bullet.addEventListener("click",function(){
         setSlide(slides[index],index)
-
     })
 }) 
+
+
+/*******************************Canvas video astronaut */
+
+let videos = document.getElementsByClassName('video-bunny-astro');
+const canvas = document.getElementById('canvas-hero');
+let context = canvas.getContext('2d');
+
+canvas.width = 1080;
+canvas.height = 1080;
+
+const fps = 1;
+const width = 1000;
+const height = 1080;
+let canvasInterval = null;
+
+
+Array.from(videos).forEach((video)=>{
+
+    video.style.visibility = "hidden";
+    video.autoplay="true";
+    video.muted="true";
+    video.setAttribute("preload","auto");
+    video.setAttribute("playsinline","true");
+    video.setAttribute("webkit-playsinline","true");
+    video.loop = true;
+    video.play();
+
+})
+
+let draw = function () {
+    context.reset();
+    Array.from(videos).forEach(video => {
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    });
+    requestAnimationFrame(draw);
+};
+
+draw();
+
+
+
