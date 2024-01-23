@@ -1,0 +1,89 @@
+ *{
+    font-family: Kanit, sans-serif;
+    font-weight: 400;
+ }
+.footer-body{
+    background-color: #27262c;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+.footer-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.ul-card-title{
+    color: #a881fc;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 8px 
+}
+.texto-general{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.item{
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    width: fit-content;
+    color: #f4eeff;
+    
+}
+
+.pancakeswap-svg{
+    align-self: center;
+    fill: #f4eeff;
+    color: #f4eeff;
+    flex-shrink: 0;
+}
+.svg-container {
+    display: flex;
+    flex-direction: row;
+    fill: #b8add2;
+    color: #b8add2;
+    gap: 20px;
+    padding: 0 0 32px;
+    margin: 0 0 32px;
+    border-bottom: 1px solid #383241;
+}
+.svg-container .discord svg{
+    color: #b8add2;
+    fill: #b8add2;
+    position: relative;
+    top: 2px;
+}
+.gbTewr {
+    position: relative;
+    top: -2.5px;
+}
+.dgoqDY,.discord {
+    align-items: center;
+    align-items: baseline;
+    
+}
+
+
