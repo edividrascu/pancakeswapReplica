@@ -5,7 +5,7 @@
     font-weight: 400;
  }
 .footer-body{
-    background-color: #27262c;
+    background-color: rgb(39, 38, 44);
     box-sizing: border-box;
     display: flex;
     flex: 1;
@@ -27,6 +27,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -88,8 +89,13 @@
     
 }
 
+.container-tercer-div {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;   
+}
 
-.darkmode-lenguage {
+.darkmode {
     align-items: center;
     background-color: #666171;
     border-radius: 24px;
@@ -100,7 +106,10 @@
     position: relative;
     transition: background-color 200ms ease 0s;
     width: 56px;
+    gap: 25px;
+    
 }
+
 .input-dark {
     cursor: pointer;
     opacity: 0;
@@ -143,20 +152,112 @@
     z-index: 2;
     
 }
-
-.darkmode-lenguage :focus + .sc-cLVjUO{
+.luna-dark{
+    /* margin-left: 10px; */
+}
+.darkmode :focus + .sc-cLVjUO{
     box-shadow: 0px 0px 0px 1px #7645d9,0px 0px 0px 4px rgba(118,69,217,.6);
 }
-.darkmode-lenguage :checked + .sc-cLVjUO {
+.darkmode :checked + .sc-cLVjUO {
     left: calc(100% - 30px);
     
 }
 
-.darkmode-lenguage :checked + .sc-cLVjUO .sol-dark {
+.darkmode :checked + .sc-cLVjUO .sol-dark {
     fill: #ffb237; /* Cambia el color del sol cuando está seleccionado */
 }
 
-.darkmode-lenguage :checked + .sc-cLVjUO .luna-dark {
+.darkmode :checked + .sc-cLVjUO .luna-dark {
     fill: #a881fc; /* Cambia el color de la luna cuando está seleccionada */
 }
 
+.isvKUU {
+    color: #b8add2;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.language-icon {
+    fill: #b8add2;
+    width: 24px;
+    margin-right: 0.5rem;
+    align-items: baseline;
+    position: relative;
+    
+}
+
+.language-code {
+    color: #b8add2;
+}
+
+
+.custom-dropdown {
+    display: inline-block;
+    position: relative;
+    /* margin-left: 26px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container-dark-lengua{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.selected-option {
+    color: #b8add2;
+    fill: #b8add2;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    /* margin-left: 30px; */
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    bottom:100%;
+    left: 0;
+    
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    max-height: 390px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+    
+}
+
+.dropdown-option {
+    color: #f4eeff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(39, 38, 44,.97);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.custom-dropdown:hover .dropdown-options {
+    display: block;
+}
+.custom-dropdown.selected .selected-option {
+    background-color: rgba(39, 38, 44, 0);
+}

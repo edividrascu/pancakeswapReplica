@@ -89,7 +89,8 @@
             </a>
             </div>
             <div class="container-tercer-div">
-              <div class="darkmode-lenguage">
+              <div class="container-dark-lengua">
+                <div class="darkmode">
                   <input scale="md" type="checkbox" class="sc-iJABxv input-dark" checked="">
                   <div scale="md" class="sc-cLVjUO div-dark-separator">
                     <div class="sc-gKHVLF sc-iBAaJG fOrztp jwXqsB"></div>
@@ -110,6 +111,44 @@
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.1534 13.6089L4.15362 13.61C4.77322 16.8113 7.42207 19.3677 10.647 19.8853L10.6502 19.8858C13.0412 20.2736 15.2625 19.6103 16.9422 18.2833C11.3549 16.2878 7.9748 10.3524 9.26266 4.48816C5.69846 5.77194 3.35817 9.51245 4.1534 13.6089ZM10.0083 2.21054C4.76622 3.2533 1.09895 8.36947 2.19006 13.9901C2.97006 18.0201 6.28006 21.2101 10.3301 21.8601C13.8512 22.4311 17.0955 21.1608 19.2662 18.8587C19.2765 18.8478 19.2866 18.837 19.2968 18.8261C19.4385 18.6745 19.5757 18.5184 19.7079 18.3581C19.7105 18.355 19.713 18.3519 19.7156 18.3487C19.8853 18.1426 20.0469 17.9295 20.2001 17.7101C20.4101 17.4001 20.2401 16.9601 19.8701 16.9201C19.5114 16.8796 19.1602 16.8209 18.817 16.7452C18.7964 16.7406 18.7758 16.736 18.7552 16.7313C18.6676 16.7114 18.5804 16.6903 18.4938 16.6681C18.4919 16.6676 18.4901 16.6672 18.4882 16.6667C13.0234 15.2647 9.72516 9.48006 11.4542 4.03417C11.4549 4.03214 11.4555 4.03012 11.4562 4.0281C11.4875 3.92954 11.5205 3.83109 11.5552 3.73278C11.5565 3.72911 11.5578 3.72543 11.5591 3.72175C11.6768 3.38921 11.8136 3.05829 11.9701 2.73005C12.1301 2.39005 11.8501 2.01005 11.4701 2.03005C11.1954 2.04379 10.924 2.06848 10.6561 2.10368C10.6517 2.10427 10.6472 2.10486 10.6428 2.10545C10.4413 2.13221 10.2418 2.16492 10.0446 2.2034C10.0325 2.20576 10.0204 2.20814 10.0083 2.21054Z"></path>
                     </svg>
                   </div>
+                 </div>
+                <div class="custom-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="language-icon">
+                          <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z"></path>
+                      </svg>
+                        <div class="selected-option" id="selectedOption">ES-ES</div>
+                        <div class="dropdown-options" id="dropdownOptions">
+                          <div class="dropdown-option" onclick="selectLanguage('AR')">العربية</div>
+                          <div class="dropdown-option" onclick="selectLanguage('BN')">বাংলা</div>
+                          <div class="dropdown-option" onclick="selectLanguage('EN')">English </div>
+                          <div class="dropdown-option" onclick="selectLanguage('DE')">Deutsch </div>
+                          <div class="dropdown-option" onclick="selectLanguage('EL')">Ελληνικά </div>
+                          <div class="dropdown-option" onclick="selectLanguage('ES-ES')">ESPAÑOL </div>
+                          <div class="dropdown-option" onclick="selectLanguage('FI')">Suomalainen </div>
+                          <div class="dropdown-option" onclick="selectLanguage('FIL')">Filipino </div>
+                          <div class="dropdown-option" onclick="selectLanguage('FR')">Français </div>
+                          <div class="dropdown-option" onclick="selectLanguage('HI')">हिंदी </div>
+                          <div class="dropdown-option" onclick="selectLanguage('HU')">Magyar </div>
+                          <div class="dropdown-option" onclick="selectLanguage('ID')">Bahasa Indonesia </div>
+                          <div class="dropdown-option" onclick="selectLanguage('IT')">Italiano </div>
+                          <div class="dropdown-option" onclick="selectLanguage('JA')">日本語 </div>
+                          <div class="dropdown-option" onclick="selectLanguage('KO')">한국어 </div>
+                          <div class="dropdown-option" onclick="selectLanguage('NL')">Nederlands </div>
+                          <div class="dropdown-option" onclick="selectLanguage('PL')">Polski </div>
+                          <div class="dropdown-option" onclick="selectLanguage('PT-BR')">Português</div>
+                          <div class="dropdown-option" onclick="selectLanguage('PT')">Português (PT)</div>
+                          <div class="dropdown-option" onclick="selectLanguage('RO')">Română </div>
+                          <div class="dropdown-option" onclick="selectLanguage('RU')">Русский</div>
+                          <div class="dropdown-option" onclick="selectLanguage('SV')">Svenska</div>
+                          <div class="dropdown-option" onclick="selectLanguage('TA')">தமிழ் </div>
+                          <div class="dropdown-option" onclick="selectLanguage('TR')">Türkçe </div>
+                          <div class="dropdown-option" onclick="selectLanguage('UK')">Українська </div>
+                          <div class="dropdown-option" onclick="selectLanguage('VI')">Tiếng Việt </div>
+                          <div class="dropdown-option" onclick="selectLanguage('ZH-CN')">简体中文 (ZH-CN)</div>
+                          <div class="dropdown-option" onclick="selectLanguage('ZH-TW')">繁體中文 (ZH-TW)</div>
+                         </div>
+                    </div>
+                  
                 </div>
             </div>
         </section>
