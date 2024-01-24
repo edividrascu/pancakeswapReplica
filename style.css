@@ -1,4 +1,6 @@
  *{
+    margin: 0;
+    padding: 0;
     font-family: Kanit, sans-serif;
     font-weight: 400;
  }
@@ -86,4 +88,75 @@
     
 }
 
+
+.darkmode-lenguage {
+    align-items: center;
+    background-color: #666171;
+    border-radius: 24px;
+    box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,.1);;
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+    width: 56px;
+}
+.input-dark {
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    
+}
+.div-dark-separator {
+    background-color:#27262c;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 26px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    transition: left 200ms ease-in 0s;
+    width: 26px;
+    z-index: 1;
+    
+    
+}
+.path2-dark{
+    width: 100%;
+    height: 100%;
+}
+.path-dark{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cUWKCL {
+    align-self: center;
+    fill: #a881fc;
+    color: #a881fc;
+    flex-shrink: 0;
+}
+.kEbZiL{
+    z-index: 2;
+    
+}
+
+.darkmode-lenguage :focus + .sc-cLVjUO{
+    box-shadow: 0px 0px 0px 1px #7645d9,0px 0px 0px 4px rgba(118,69,217,.6);
+}
+.darkmode-lenguage :checked + .sc-cLVjUO {
+    left: calc(100% - 30px);
+    
+}
+
+.darkmode-lenguage :checked + .sc-cLVjUO .sol-dark {
+    fill: #ffb237; /* Cambia el color del sol cuando está seleccionado */
+}
+
+.darkmode-lenguage :checked + .sc-cLVjUO .luna-dark {
+    fill: #a881fc; /* Cambia el color de la luna cuando está seleccionada */
+}
 
