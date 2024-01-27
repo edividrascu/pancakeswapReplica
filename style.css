@@ -1,3 +1,1257 @@
+
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+
+
+* {
+  font-family: "Kanit", sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 5000px;
+}
+.background-ecosystem {
+  background-color: black;
+  height: auto;
+}
+/* Soporte para propiedades específicas del navegador */
+@supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and
+  (not (-moz-appearance: none)) {
+  .kthPaM {
+    filter: none !important;
+  }
+
+  /* Estilos para la barra de desplazamiento en WebKit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #15111b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #b8add2;
+    border-radius: 8px;
+    height: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #372f47;
+    border-radius: 10px;
+  }
+}
+
+body img {
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --colorPurple: #a881fb;
+}
+.container-ecosystem {
+  /* width: 100%;  bordes blancos  a los lados ??????*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 1rem;
+}
+.title {
+  margin-top: 1rem;
+  color: white;
+  font-size: 30px;
+}
+.title-span {
+  color: var(--colorPurple);
+}
+.trade-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 1152px;
+  box-sizing: border-box;
+  padding: 48px 24px 24px;
+  min-height: 360px;
+  margin-top: 48px;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+  border-radius: 24px;
+}
+.earn-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 1152px;
+  box-sizing: border-box;
+  padding: 48px 24px 24px;
+  min-height: 360px;
+  margin-top: -480px;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+  border-radius: 24px;
+}
+.game-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 1152px;
+  box-sizing: border-box;
+  padding: 48px 24px 24px;
+  min-height: 360px;
+  margin-top: 15px;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
+  border-radius: 24px;
+}
+.h1-trade {
+  color: var(--colorPurple);
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  width: 700px;
+  left: 280px;
+  font-size: 37px;
+  margin-top: 0;
+  position: relative;
+}
+
+.img-trade {
+  position: relative;
+  right: 430px;
+  top: -320px;
+}
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  left: 120px;
+  top: -550px;
+  position: relative;
+  width: 804px;
+  height: 249px;
+  
+}
+.card1 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 286;
+  
+  
+}
+.card1-game{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 286;
+  
+  
+}
+
+
+
+.card1 a {
+  text-decoration: none;
+}
+
+.card1 .hover {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  transition: opacity 0.25s ease-in-out 0.1s;
+}
+
+.card1 .default {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out 30s;
+}
+
+.card1:hover .hover {
+  opacity: 1;
+}
+
+.card1:hover .default {
+  opacity: 0;
+}
+
+.h1-card1 {
+  color: #f4eeff;
+  margin: 7px;
+}
+.p-card1 {
+  color: #f4eeff;
+  font-size: 13px;
+  margin-left: 7px;
+}
+.h1-a-card1 {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 7px;
+  color: #b8add2;
+}
+.card1:hover .h1-a-card1 {
+  color: #1ec7d3;
+}
+
+.a-flecha path {
+  fill: #b8add2;
+}
+.a-flecha {
+  vertical-align: middle;
+}
+
+.container-cards2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  left: -80px;
+  top: -600px;
+  position: relative;
+  width: 904px;
+  height: 249px;
+  
+}
+.img-earn2 {
+  position: relative;
+  right: -510px;
+  top: -320px;
+}
+.h1-earn {
+  color: var(--colorPurple);
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  width: 700px;
+  left: 30px;
+
+  margin-top: 0;
+  position: relative;
+}
+.card2 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 286;
+}
+.card2-game{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 286;
+  margin-left: -30px;
+}
+.card2 a {
+  text-decoration: none;
+}
+
+.card2 .hover {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  transition: opacity 0.25s ease-in-out 0.1s;
+}
+
+.card2 .default {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out 30s;
+}
+
+.card2:hover .hover {
+  opacity: 1;
+}
+
+.card2:hover .default {
+  opacity: 0;
+}
+
+.card2:hover .h1-a-card1 {
+  color: #1ec7d3;
+}
+
+.h1-game {
+  color: var(--colorPurple);
+  display: flex;
+  font-size: 35px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  width: 700px;
+  left: 280px;
+
+  margin-top: 0;
+  position: relative;
+}
+.card3 {
+  position: relative;
+  display: inline-block;
+  width: 102px;
+  height: 286;
+}
+.card3-game{
+  position: relative;
+  display: inline-block;
+  width: 200px ;
+  height: 286;
+}
+.card3 a {
+  text-decoration: none;
+}
+
+.card3 .hover {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  transition: opacity 0.25s ease-in-out 0.1s;
+}
+
+.card3 .default {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out 30s;
+}
+
+.card3:hover .hover {
+  opacity: 1;
+}
+
+.card3:hover .default {
+  opacity: 0;
+}
+
+.card3:hover .h1-a-card1 {
+  color: #1ec7d3;
+}
+.earn-card5 {
+  width: 170px;
+  top: -2px;
+}
+.earn-card5 .p-card1,.h1-card1{
+    width: 170px;
+}
+.earn-card3 {
+  width: 130px;
+  top: -6px;
+}
+
+.card4 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 286;
+}
+.earn-card4 {
+  width: 160px;
+}
+.card4 a {
+  text-decoration: none;
+}
+
+.card4 .hover {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  transition: opacity 0.25s ease-in-out 0.1s;
+}
+
+.card4 .default {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out 30s;
+}
+
+.card4:hover .hover {
+  opacity: 1;
+}
+
+.card4:hover .default {
+  opacity: 0;
+}
+
+.card4:hover .h1-a-card1 {
+  color: #1ec7d3;
+}
+
+.card5 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 286;
+}
+
+.card5 a {
+  text-decoration: none;
+}
+
+.card5 .hover {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  transition: opacity 0.25s ease-in-out 0.1s;
+}
+
+.card5 .default {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out 30s;
+}
+
+.card5:hover .hover {
+  opacity: 1;
+}
+
+.card5:hover .default {
+  opacity: 0;
+}
+
+.card5:hover .h1-a-card1 {
+  color: #1ec7d3;
+}
+.container-cards2-earn {
+  margin-top: -610px;
+  margin-left: -260px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.h1-earn{
+    top: -17px;
+    font-size: 40px;
+}
+
+
+/* ESTILOS PARA EL BOTON DE VOLVER AL TOP */
+.container-boton-top {
+  position: fixed;
+  right: 18px;
+  bottom: calc(110px + env(safe-area-inset-bottom));
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.buton-to-top {
+  position: relative;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 0px 24px;
+  background-color: #1fc7d4;
+  color: #191326;
+  width: 48px;
+  height: 48px;
+  filter: none !important;
+}
+.buton-to-top:hover{
+  opacity: 0.7;
+}
+.svg-boton-top{
+  align-self: center;
+  fill: #191326;
+  color: #191326;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+/* ESTILOS PARA EL BOTON DE VOLVER AL TOP */
+
+
+
+
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+
+/* !!!! en min si ponemos min950px y la ventana es mas pequeña de 950 ya no se aplican los estilos */
+
+
+@media screen and (max-width: 1200px) {
+  .trade-container,
+  .earn-container{
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 650px;
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .container-cards {
+    margin-top: -240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .container-cards2-earn {
+    margin-top: -850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .container-cards-game{
+    height: 250px;
+    top: -300px;
+  }
+  .img-trade {
+    position: relative;
+    right: 430px;
+    top: -425px;
+    left: -35%;
+  }
+  .img-earn2 {
+    position: relative;
+    right: 430px;
+    top: -465px;
+    right: -43%;
+  }
+  .h1-trade {
+    font-size: 40px;
+  }
+  .h1-earn {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    
+    flex-wrap: wrap;
+    width: 68%;
+    margin-top: -240px;
+    margin-left: 200px;
+    margin-right: 225px;
+    
+  }
+  .container-cards2-earn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    flex-wrap: wrap;
+    width: 68%;
+    margin-top: -870px;
+    margin-left: -100px;
+    margin-right: 100px;
+    margin-bottom: 4rem;
+  }
+ 
+
+  .img-trade {
+    position: relative;
+    right: 430px;
+    top: -425px;
+    left: -35%;
+  }
+  .h1-trade {
+    font-size: 40px;
+  }
+  .card1 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 23px;
+    
+  }
+  .card2 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 23px;
+    
+  }
+  .card3 {
+    margin-left: -25px;
+    max-width: 70%;
+    min-width: 210px;
+    font-size: 23px;
+    
+  }
+  .card4 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 23px;
+    
+  }
+  .card5 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 23px;
+  }
+  .earn-card4 .h1-card1,.p-card1 {
+      width: 160px;
+  }
+  .earn-card5 .h1-card1,.p-card1 {
+      width: 190px;
+      
+  }
+}
+@media screen and (min-width: 100px)  and (max-width: 967px){
+  .container-ecosystem a .default {
+    opacity: 0;
+  } 
+  .container-ecosystem a .hover {
+    opacity: 1;
+  } 
+}
+@media screen and (min-width: 614px) and (max-width: 850px) {
+  .trade-container,
+  .earn-container {
+    box-sizing: border-box;
+    width: 98%;
+    flex-wrap: wrap;
+    height: 1050px;
+    
+  }
+  .game-container{
+    height: 810px;
+  }
+  .container-cards {
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1%;
+    grid-column-gap: 0%;
+
+    height: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: calc(-22vh - 100px);
+    margin-left: -190px;
+    margin-right: 140px;
+    margin-bottom: 5rem;
+  }
+  .container-cards2-earn {
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1%;
+    grid-column-gap: 0%;
+
+    height: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: -952px;
+    margin-left: 30px;
+    margin-right: 140px;
+    margin-bottom: 5rem;
+  }
+  .container-cards-game {
+    top: -300px;
+  }
+  
+  .card1 {
+    width: 80%;
+    font-size: 23px;
+  }
+  .card2 {
+    width: 80%;
+    font-size: 23px;
+  }
+  .card3 {
+    
+    min-width: calc(110% + 4vw);
+    font-size: 23px;
+  }
+  .earn-card3 {
+    width: 150%;
+    min-width: 90%;
+    font-size: 21px;
+    margin-left: -20px;
+  }
+  
+  .card4 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 23px;
+  }
+  .card5 {
+    max-width: 90%;
+    min-width: 210px;
+    font-size: 20px;
+  }
+  .p-card1 {
+    font-size: 14px;
+  }
+  .h1-a-card1 {
+    font-size: 16px;
+  }
+  .earn-card3 .p-card1,.h1-card1{
+    min-width: 110%;
+    
+  }
+  .img-trade {
+    position: relative;
+    /* right: 530px; */
+    top: -999px;
+    left: -19%;
+    width: 340px;
+  }
+  .img-earn2 {
+    position: relative;
+    
+    top: -1010px;
+    left: -21%;
+    width: 340px;
+  }
+  .img-game{
+    top: -770px;
+  }
+  .h1-trade {
+    font-size: 41px;
+    margin-left: -271px;
+    margin-top: 347px;
+    width: 200px;
+  }
+  .h1-earn {
+    font-size: 40px;
+    margin-left: -10px;
+    margin-top: 420px;
+    width: 200px;
+  }
+  .h1-game{
+    font-size: 37px;
+    margin-left: -210px;
+    margin-top: 390px;
+    width: 240px;
+  }
+  
+  .p-card1-earn {
+    width: 50%;
+  }
+  
+}
+@media screen and (min-width: 200px) and (max-width: 613px) {
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block;
+  }
+  .title-span {
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block;
+  }
+  .container-ecosystem {
+    margin-left: 15px;
+    margin-right: 15px;
+    
+  }
+  .trade-container,
+  .earn-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1320px;
+    margin-bottom: 4rem;
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1020px;
+    margin-bottom: 4rem;
+  }
+  .container-cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -598px;
+    margin-left: -205px;
+    height: 80%;
+    margin-bottom: 3rem;
+  }
+  .container-cards2-earn {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -1265px;
+    margin-left: 26px;
+    height: 80%;
+    margin-bottom: 10rem;
+  }
+  .container-cards-game {
+    top: -320px;
+    
+    width: 100%;
+    left: 100px;
+  }
+  .h1-trade {
+    position: relative;
+    font-size: 38px;
+    left: 40px;
+    top: 430px;
+    width: 200px;
+  }
+  .h1-earn {
+    position: relative;
+    font-size: 36px;
+    left: 40px;
+    top: 430px;
+    width: 200px;
+  }
+  .h1-game{
+    left: 40px;
+    top: 380px;
+  }
+  
+  .img-trade {
+    position: relative;
+
+    top: -1246px;
+    left: -0.2vh;
+
+    max-width: 340px;
+    width: 100%; 
+    min-width: 255px; 
+  }
+  .img-earn2 {
+    position: relative;
+
+    top: -1330px;
+    left: -1.9vh;
+
+    max-width: 340px;
+    width: 100%; 
+    min-width: 255px; 
+  }
+  .img-game{
+    top: -1050px;
+    left: -40px;
+  }
+  .card1 {
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+  } 
+  .card2 {
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    font-size: 23px;
+  }
+  .card2-game{
+    position: relative;
+   width: 100%;
+   min-width: 10%;
+   margin-left: -35px;
+  
+  }
+  .card3 {
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+  }
+  .earn-card3 {
+    width: calc(270px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+  }
+  .card4 {
+    width: calc(310px -1vw);
+    min-width: calc(70px + 30%);
+    font-size: 23px;
+  }
+  .card5 {
+    width: calc(310px -1vw);
+    min-width: calc(200px + 30%);
+    font-size: 20px;
+  }
+  .p-card1 {
+    font-size: 14px;
+  }
+  /* .p-card1-earn{
+    width: 80%;
+  } */
+  
+   
+
+  .default {
+    max-width: 70%;
+    min-width: 50%;
+  }
+  .hover {
+    max-width: 70%;
+    min-width: 50%;
+  }
+  .ultimaImg {
+    max-width: 40%;
+    min-width: 30%;
+  }
+  .ultimaImgHover {
+    max-width: 40%;
+    min-width: 30%;
+  }
+  .h1-card1-earn {
+      width: calc(310px -1vw);
+      min-width: calc(95px + 30%);
+      min-width: none;
+      font-size: 19px;
+      
+    }
+}
+/* @media screen and (min-width: 350px) and (max-width: 390px) {
+ 
+} */
+@media screen and (min-width: 200px) and (max-width: 395px) {
+  .h1-trade {
+    top: calc(340px - -19vw);
+  }
+  .h1-earn {
+    top:390px
+  }
+  .h1-game{
+    top: 340px;
+    left: 10px;
+  }
+  .card2-game{
+  width: 70%;
+ }
+}
+@media screen and (min-width: 200px) and (max-width: 351px) {
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block;
+  }
+  .title-span {
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 32px;
+    line-height: 110%;
+    display: inline-block;
+  }
+  .container-ecosystem {
+    
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: black;
+    gap: 2rem;
+  }
+  .trade-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1800px;
+   
+  }
+  .earn-container {
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1880px;
+  }
+  .game-container{
+    box-sizing: border-box;
+    width: 104%;
+    flex-wrap: wrap;
+    height: 1280px;
+  }
+  .container-cards{
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin-top: calc(-84vh - 100px); para pantallas de 1080 */
+    margin-top: -1165px;
+    margin-left: -155px;
+    margin-bottom: 7rem;
+    height: 100%;
+  }
+  .container-cards2-earn {
+    display: grid;
+
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    margin-top: -1799px;
+    margin-left: 55px;
+    margin-bottom: 10rem;
+
+    height: 100%;
+  }
+  .container-cards-game{
+    margin-top: -910px;
+  }
+  .h1-trade {
+    position: relative;
+    font-size: 38px;
+    left: 30px;
+    top: 350px;
+    width: 200px;
+  }
+  .h1-earn {
+    font-size: 40px;
+    top: 421px;
+  }
+  .h1-a-card1 {
+    margin-top: 4px;
+  }
+
+  .img-trade {
+    position: relative;
+    
+    top: -1800px;
+    left: 3.2vh;
+
+    max-width: 340px; 
+    width: 100%; 
+    min-width: 200px; 
+  }
+
+  .img-earn2 {
+    position: relative;
+    
+    top: -1880px;
+    left: 3.2vh;
+
+    max-width: 340px; 
+    width: 100%; 
+    min-width: 200px; 
+  }
+  .img-game{
+    top: -1300px;
+  }
+  .card1 {
+    min-width: none;
+    max-width: 320px;
+  }
+  .card2 {
+    width: calc(310px -1vw);
+  }
+  .card2-game{
+    width: 70%;
+   margin-left: 0px;
+  
+  }
+  .card3 {
+    width: calc(310px -1vw);
+    min-width: calc(90px + 30%);
+    max-width: 230px;
+    font-size: 23px;
+  }
+  .card4 {
+    width: calc(310px -1vw);
+    min-width: calc(70px + 30%);
+    font-size: 23px;
+  }
+  
+  
+  .p-card1 {
+    font-size: 14px;
+  }
+  .p-card1-5{
+    width: 50%;
+  }
+
+  .h1-a-card1 {
+    font-size: 16px;
+  }
+
+  .default {
+    max-width: 70%;
+    min-width: 50%;
+  }
+  .hover {
+    max-width: 70%;
+    min-width: 50%;
+  }
+  .ultimaImg {
+    max-width: 40%;
+    min-width: 30%;
+  }
+  .ultimaImgHover {
+    max-width: 40%;
+    min-width: 30%;
+  }
+  
+  .card5 {
+    width: calc(310px -1vw);
+    min-width: calc(188px + 30%);
+    font-size: 20px;
+  }
+  
+}
+@media screen and (min-width: 295px) and (max-width: 351px) {
+  .h1-trade {
+    top: calc(320px - -19vw);
+  }
+  .container-cards2-earn {
+    top: 1400px;
+  }
+  
+}
+@media screen and (min-width: 200px) and (max-width: 317px) {
+  
+  .h1-trade {
+    top: calc(270px - -19vw);
+  }
+  .h1-earn {
+    top: calc(293px - -19vw);
+    
+  }
+  .h1-game {
+    top: calc(250px - -19vw);
+    font-size: 30px;
+  }
+  .card2-game, .card3-game {
+    width: 70%;
+  }
+  .container-cards2-earn {
+    margin-bottom: 14rem;
+  }
+}
+
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */ /* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+/* MEDIAQUERIS MEDIAQUERIS MEDIA QUERIS EDIA QUERIS MEDIA QUERIS MEDIA QUERIS MEDIAS MEDIAS ALGO MAS AJSDQNSODNASIJDNAADASDASDASDASDAS */
+
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.container-dark {
+  background-color: #b16f6f;
+  color: #000000;
+}
+.ecosystem-dark {
+  background-color: #ffffff;
+}
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Estilos del checkbox */
+
+
+#toggleBtn + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#toggleBtn + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+}
+
+#toggleBtn:checked + label:before {
+  background-color: #ffffff; /* Cambia el fondo cuando el checkbox está marcado */
+}
+
+#toggleBtn + label:after {
+  content: 'DARK MODE';
+  position: absolute;
+  left: 30px;
+  top: -2px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#toggleBtn:checked + label:after {
+  color: #fff; /* Cambia el color del texto cuando el checkbox está marcado */
+}
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+/* DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE DARK MODE */
+
+
+
+
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+/* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
+
+=======
 :root{
     --colors-primary: #1fc7d4;
     --colors-invertedContrast: #191326;
