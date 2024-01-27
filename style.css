@@ -14,7 +14,8 @@ body {
 }
 .background-ecosystem {
   background-color: black;
-  height: auto;
+  height: 30%;
+  
 }
 /* Soporte para propiedades específicas del navegador */
 @supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and
@@ -453,6 +454,7 @@ body img {
   border: 0px;
   font-size: 100%;
   vertical-align: baseline;
+  z-index: 999;
 }
 
 .buton-to-top {
@@ -502,6 +504,9 @@ body img {
 
 
 @media screen and (max-width: 1200px) {
+  .background-ecosystem{
+    height: 40%;
+  }
   .trade-container,
   .earn-container{
     box-sizing: border-box;
@@ -556,6 +561,9 @@ body img {
 }
 
 @media screen and (min-width: 850px) and (max-width: 1200px) {
+  .background-ecosystem{
+    height: 42%;
+  }
   .container-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -639,6 +647,9 @@ body img {
   } 
 }
 @media screen and (min-width: 614px) and (max-width: 850px) {
+  .background-ecosystem{
+    height: 66%;
+  }
   .trade-container,
   .earn-container {
     box-sizing: border-box;
@@ -770,6 +781,9 @@ body img {
   
 }
 @media screen and (min-width: 200px) and (max-width: 613px) {
+  .background-ecosystem{
+    height: 82%;
+  }
   .title {
     text-align: center;
     font-weight: 600;
@@ -1251,7 +1265,7 @@ label {
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 /* EDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEIDIEDIEIDIEDIEIDIEDIEIDEIDIEIDEIDEIDEDEIDIEDIEIDEIDIEIDEIDIEDEDEDEDIEIDEIDEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDI */
 
-=======
+
 :root{
     --colors-primary: #1fc7d4;
     --colors-invertedContrast: #191326;
