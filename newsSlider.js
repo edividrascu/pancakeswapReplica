@@ -1,12 +1,13 @@
+'use-strict' 
 let sliderContainer = document.getElementsByClassName("news-slider-content")[0];
-let slides = sliderContainer.getElementsByClassName("news-slide");
+let slidesGlider = sliderContainer.getElementsByClassName("news-slide");
 let prevButton = document.getElementsByClassName("news-slider-prev")[0];
 let nextButton = document.getElementsByClassName("news-slider-next")[0];
 
-let totalSlides = slides.length;
+let totalSlides = slidesGlider.length;
 let countSlides = totalSlides;
-let slideStyle = window.getComputedStyle(slides[0]);
-let slideWidth = slides[0].offsetWidth + parseFloat(slideStyle.marginRight);
+let slideStyle = window.getComputedStyle(slidesGlider[0]);
+let slideWidth = slidesGlider[0].offsetWidth + parseFloat(slideStyle.marginRight);
 
 
 function countClicks() {
@@ -30,8 +31,8 @@ nextButton.addEventListener("click",function() {
     if(remainingClicks>=1 && (remainingClicks+countSlides)>2){
         countSlides -= 1
         for(i=0;i<totalSlides;i++){
-            slides[i].style.transform = `translate(${-(slideWidth*(totalSlides-countSlides))}px,0)`
-            slides[i].style.transition=" all 300ms" 
+            slidesGlider[i].style.transform = `translate(${-(slideWidth*(totalSlides-countSlides))}px,0)`
+            slidesGlider[i].style.transition=" all 300ms" 
         }
     }
     
@@ -43,8 +44,8 @@ prevButton.addEventListener("click",function() {
     if(countSlides<totalSlides){
         countSlides += 1
         for(i=0;i<totalSlides;i++){
-            slides[i].style.transform = `translate(${-(slideWidth*(totalSlides-countSlides))}px,0)`
-            slides[i].style.transition=" all 300ms" 
+            slidesGlider[i].style.transform = `translate(${-(slideWidth*(totalSlides-countSlides))}px,0)`
+            slidesGlider[i].style.transition=" all 300ms" 
         }
     }
 })
