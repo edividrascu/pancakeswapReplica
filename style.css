@@ -1379,21 +1379,7 @@
     }
     
 }
-:root{
-    --colors-primary: #1fc7d4;
-    --colors-invertedContrast: #191326;
-    --colors-gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
-    --colors-text: #f4eeff;
-    --colors-cardBorder: #383241;
-    --colors-backgroundAlt: #27262c;
-    --colors-secondary: #a881fc;
-}
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Kanit', sans-serif;
-    font-size: 100%;
-}
+
 #cake-animation{
     position: relative;
     display: flex;
