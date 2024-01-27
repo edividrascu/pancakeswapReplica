@@ -2203,3 +2203,180 @@
         border-bottom: 1px solid var(--colors-cardBorder);
     }
 }
+
+.join-dex-container{
+    margin: 0px;
+    width: 100%;
+    /*max-width: 968px;*/
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 48px 16px;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+}
+.join-dex-backgound{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-dex-backgound svg{
+    transform: scale3d(4, 4, 1);
+    height: 100%;
+    width: 100%;
+    transform-origin: center center;
+}
+.join-dex-backgound>div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.join-dex-backgoun div img{
+    height: auto;
+    max-width: 100%;
+}
+.join-dex-backgound>div img:first-child{
+    display: block;
+    left: calc(50% - 360px);
+    position: absolute;
+    width: 120px;
+    top: 20px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes;
+}
+.join-dex-backgound>div img:nth-child(2){
+    left: calc(50% + 180px);
+    position: absolute;
+    width: 120px;
+    top: 16px;
+    right: 5px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes2;
+}
+.join-dex-backgound>div img:nth-child(3){
+    left: calc(50% + 190px);
+    width: 160px;
+    position: absolute;
+    bottom: 10px;
+    right: -60px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes3;
+}
+.join-dex-backgound>div img:nth-child(4){
+    left: calc(50% - 310px);
+    width: 140px;
+    position: absolute;
+    bottom: 10px;
+    animation: 3s ease-in-out 1s infinite normal none running movingpancakes4;
+}
+.join-dex-text-button{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+}
+.join-dex-text{
+    color: rgb(244, 238, 255);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px; 
+}
+.join-dex-button{
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: var(--colors-primary);
+    color: var(--colors-invertedContrast);
+    margin-top: 24px;
+}
+.join-dex-button:hover{
+    opacity: 70%;
+}
+@media(max-width:968px){
+    .join-dex-text-button{
+        height: 560px;  
+    }
+}
+@media(max-width:567px){
+    .join-dex-text-button{
+        height: 480px;  
+    }
+}
+@keyframes movingpancakes{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(3px) translateY(2px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes2{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(3px) translateY(3px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes3{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(8px) translateY(6px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+@keyframes movingpancakes4{
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translate(1px) translateY(1px);
+    }
+    
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
