@@ -82,6 +82,7 @@ body img {
   margin-top: 48px;
   background: linear-gradient(139.73deg, rgb(49, 61, 92), rgb(61, 42, 84));
   border-radius: 24px;
+  background-color: red;
 }
 .earn-container {
   display: flex;
@@ -134,6 +135,7 @@ body img {
   top: -550px;
   width: 804px;
   height: 249px;
+  position: relative;
   
 }
 .card1 {
@@ -983,6 +985,9 @@ body img {
  }
 }
 @media screen and (min-width: 200px) and (max-width: 351px) {
+    .background-ecosystem{
+        height: 114%;
+      }
   .title {
     text-align: center;
     font-weight: 600;
@@ -1159,6 +1164,7 @@ body img {
   
 }
 @media screen and (min-width: 295px) and (max-width: 351px) {
+   
   .h1-trade {
     top: calc(320px - -19vw);
   }
@@ -1168,7 +1174,7 @@ body img {
   
 }
 @media screen and (min-width: 200px) and (max-width: 317px) {
-  
+   
   .h1-trade {
     top: calc(270px - -19vw);
   }
@@ -4008,7 +4014,7 @@ a {
     font-size: 16px;
 }
         
-.container-cards{
+.container-cards-community{
     display: flex;
     flex-flow: nowrap;
     flex-direction: column;
@@ -4389,9 +4395,7 @@ a {
         flex-direction: column;
         margin-bottom: 40px;
     }
-    .second-flex{
-
-    }
+    
     .ajustes-svg{
         width: 32px;
         height: 32px;
@@ -4400,7 +4404,7 @@ a {
 }
 @media screen and (min-width: 825px){
 
-    .container-cards{
+    .container-cards-community{
         flex-direction: row;
     }
 }
