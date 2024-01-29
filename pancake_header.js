@@ -32,6 +32,7 @@ phisButton.addEventListener("click", closePhis)
 function closePhis(){
     phisWarning.style.display='none';
     localStorage.setItem("close", "true")
+    astronautaSection.style.marginTop = `${document.querySelector('.navbar').clientHeight}px`
 }
 //SETTINGS BUTTONS
 const optButton= document.getElementById('navGear');

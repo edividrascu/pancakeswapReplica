@@ -1,3 +1,10 @@
+/// Margins
+
+let astronautaSection = document.getElementById("astronauta")
+astronautaSection.style.marginTop = `${document.getElementById('phisWarning').clientHeight+document.querySelector('.navbar').clientHeight}px`
+
+/// Slider
+
 let banner = document.getElementsByClassName('automatic-banner')[0];
 let slides = banner.getElementsByClassName('automatic-banner-slide');
 let progressBar = document.getElementsByClassName('automatic-banner-progress')[0];
