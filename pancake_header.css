@@ -9,7 +9,7 @@
     margin: 0;
 }
 body{
-   height: 100vh;
+   
    background-color: rgb(28,21,46);
    
 }
@@ -90,9 +90,8 @@ body{
     padding:0px;
     display: flex;
     align-items: center;
-    position: relative;
-    
-    
+    position: fixed;
+    z-index: 3;
 }
 #panckHome{
     background-color: var(--nav-color);
@@ -208,16 +207,37 @@ body{
 .setOptions{
     display: flex;
     flex-direction: row;
+    height: 55px;
 }
 .DarkButton{
     position: absolute;
+    background-color: #666171;
+    border-radius: 20px;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     right: 30px;
     height: 30px;
     width: 60px;
     margin-top: 13px;
 }
-.setOptions{
-    height: 55px;
+#Night{
+    border-radius: 50px;
+    background-color: #27262C;
+    width: 40px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+}
+#NightSvg{
+    fill:#9674DF;
+}
+.DarkButton:hover #Night{
+    border: 3px solid #5D3CA0;
 }
 .questSettings{
     fill:rgb(183,173,209);
@@ -225,12 +245,50 @@ body{
 .questSettings:hover{
     fill:rgb(134,126,152);
 }
+.questTitle{
+    white-space: nowrap;
+}
 .setDropdown{
     display:none;
+    flex-direction:column-reverse;
+    position: relative;
+    background: white;
+    color:rgb(55,30,107);
+    border-radius: 20px;
+    padding-left: 10px;
+    z-index: 3;
+    bottom: 250%;
+    left: -50%;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.DarkOption{
+ background-color: rgb(55,47,71);
+ border-style: none;
+ position: absolute;
+ right: 30px;
+ height: 34px;
+ width: 60px;
+ margin-top: 13px;
+ border-radius: 20px;
+}
+.DarkCircle{
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+    background-color: rgb(39,38,44);
+}
+.DarkOption:hover .DarkCircle{
+    border: 4px solid #5D3CA0;
+}
+.setQuestion:hover .setDropdown{
+ display: flex;
+
 }
 #gButtons{
     display: flex;
-
     gap:10px;
 }
 .gweiButtons{
@@ -281,6 +339,9 @@ body{
     background-color: var(--nav-color);
     border:none;
 }
+.dropdownWorld:hover #dropdownlang{
+  display: flex;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -288,7 +349,7 @@ body{
     min-width: 200px;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 3;
+    z-index: 0;
     border-radius: 20px;
     padding-top: 5px;
     width: 250px;
@@ -317,24 +378,31 @@ body{
   .dropdown-content-bottom {
     display: none;
     position: absolute;
-    left:0vw;
     background-color: var(--nav-color);
     min-width: 200px;
-    width: 90vw;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 0;
     border-radius: 20px;
-    bottom: 100%;
+    bottom: 90%;
     padding-top: 5px;
   }
-#dropdown-lang{
-    height: 400px;
-    border-radius: 10px;
-    overflow-y: scroll; 
+
+#dropdownlang{
     margin-top: 5px;
-    right: 0px;
-    scrollbar-color: rgb(184,173,210) red;
+    border-radius: 10px;
+    height: 400px;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow-y: scroll; 
+    scrollbar-color: rgb(184,173,210) gray;
+    position: absolute;
+    font-weight: bold;
+    background-color: var(--nav-color);
+    z-index: 1;
 }
 #dropdown-lang::-webkit-scrollbar {
     height: 5px;
@@ -360,8 +428,19 @@ body{
   #arrowbox{
     background-color: rgb(53,53,71);
     border-radius: 20px;
-    width: 60px;
+    width: 100px;
     height: 30px;
+}
+#arrow-mob{
+    font-size: 120%;
+    font-weight: bold;
+    color: rgb(244,238,252)
+}
+#arrow{
+    display: none;
+    font-size: 110%;
+    font-weight: bold;
+    color: rgb(244,238,252)
 }
 #arrowBNB{
     width: 35px;
@@ -382,10 +461,19 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
     
 }
 #netbutton:hover{
     background-color: rgb(48,47,61);
+    color:rgb(173,168,181);
+}
+#netbutton:hover #arrow{
+    color:rgb(173,168,181);
+}
+#netbutton:hover #arrow-mob{
+    color:rgb(173,168,181);
 }
 #netarrow{
     background-color: none;
@@ -393,7 +481,7 @@ body{
     height: 12px;
     width: 30px;
     position: absolute;
-    left: 25px;
+    left: 70px;
     z-index: 1;
   }
 
@@ -403,11 +491,12 @@ body{
     height: 40px;
     width: 100%;
     font-weight: bold;
+    
     line-height: 40px;
     padding-left: 30px;
     border-top: 1px solid rgb(184,173,210,0.25);
     border-bottom: 1px solid rgb(184,173,210,0.25);
-
+    
 }
 .Crypto-option{
     width: 100%;
@@ -451,7 +540,7 @@ body{
     display: none;
 }
 .navbarMob{
-    position:sticky;
+    position:fixed;
     top:90vh;
     background-color: var(--nav-color);
     border-top: 1px solid rgb(56,50,65);
@@ -483,7 +572,7 @@ body{
     display: none;
 }
 .navbarMob:hover{
-    top:100vh
+    top:93vh;
 }
 .bottomNav{
     display: flex;
@@ -582,7 +671,7 @@ body{
     z-index: 2;
 }
 #slidesCrypto{
-    animation:translatestf 60s linear infinite;
+    animation:translatestf 90s linear infinite;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -614,7 +703,7 @@ body{
     font-weight: bolder;
     font-size: 120%;
     height: 46px;
-    min-width: 15px;
+    min-width: 150px;
     max-width: 200px;
 }
 #slideBNBsvg{
@@ -656,6 +745,7 @@ body{
     font-weight: bolder;
     font-size: 120%;
     height: 46px;
+    min-width: 120px;
     max-width: 200px;
 }
 #slideAptossvg{
@@ -871,6 +961,10 @@ font-size: 89%;
         animation-name: closeEyes;
         animation-timing-function: ease;
     }
+    #pancBunnyMob:hover .eye{
+        animation-name: closeEyes;
+        animation-timing-function: ease;
+    }
     @keyframes closeEyes {
         0% {opacity:1;}
         50% {opacity:0;}
@@ -898,6 +992,18 @@ font-size: 89%;
     }
     #setSettings{
         background-image: linear-gradient(to right, rgb(59,64,84),rgb(57,49,68));
+    }
+    #arrowbox{
+        width: 150px;
+    }
+    #netarrow{
+        left: 120px;
+    }
+    #arrow{
+        display: flex;
+    }
+    #arrow-mob{
+        display: none;
     }
     #connect-button{
         display:none;
@@ -943,6 +1049,7 @@ font-size: 89%;
         position: absolute;
         right: 120px;
         bottom: 450px;
+        z-index: 1;
        }
      #stats{
         display: flex;
