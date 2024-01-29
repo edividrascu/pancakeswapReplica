@@ -635,7 +635,6 @@ body{
 }
 .statistics{
     width: 200px;
-    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
