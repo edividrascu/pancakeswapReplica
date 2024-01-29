@@ -25,14 +25,16 @@ const config = {
     let close=localStorage.getItem("close");
     const phisWarning= document.getElementById('phisWarning');
     const phisButton = document.getElementById('phisButton');
+    
+
 if(close === "true"){
 closePhis();
 }
 phisButton.addEventListener("click", closePhis)
 function closePhis(){
     phisWarning.style.display='none';
-    localStorage.setItem("close", "true")
-    astronautaSection.style.marginTop = `${document.querySelector('.navbar').clientHeight}px`
+    document.getElementById("astronauta").style.marginTop = `${document.querySelector('.navbar').clientHeight}px`
+    localStorage.setItem("close", "true")  
 }
 //SETTINGS BUTTONS
 const optButton= document.getElementById('navGear');
