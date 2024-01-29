@@ -607,6 +607,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 #statsText{
     color: rgb(244,238,255);
@@ -1040,21 +1041,21 @@ font-size: 89%;
         height: 150px;
         position: absolute;
         left: 15px;
-        bottom: -270px;
+        bottom: 270px;
        }
        #ethBallRocket{
         width: 120px;
         height: 220px;
         position: absolute;
         right: 0px;
-        bottom: -310px;
+        bottom: 310px;
        }
        #aptosBallRocket{
         width: 90px;
         height: 110px;
         position: absolute;
         right: 120px;
-        bottom: -200px;
+        bottom: 200px;
         z-index: 1;
        }
      #stats{
