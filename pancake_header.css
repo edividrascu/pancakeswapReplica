@@ -23,6 +23,10 @@ body{
     display: none;
     
 }
+#top{
+    position: fixed;
+    z-index: 999;
+}
 .navLang{
     text-decoration: none;
     background-color: var(--nav-color);
@@ -41,6 +45,7 @@ body{
     align-items: center;
     padding-left: 15px;
 }
+
 #phisBunny{
     display: none;
     background: none;
