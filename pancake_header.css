@@ -602,7 +602,7 @@ body{
     width: 100%;
     height: 650px;
     background-color: rgb(9,7,12);
-    background-image: linear-gradient(183deg, rgb(9,7,12) 50%, rgb(32,19,53)85%, rgb(9,7,12) 85%);
+    background-image: linear-gradient(183deg, rgb(9,7,12) 50%, rgb(32,19,53)85%, rgb(8, 6, 11) 85%);
     display: flex;
     flex-direction: column;
     align-items: center;
