@@ -23,6 +23,9 @@ body{
     display: none;
     
 }
+#top{
+	position:fixed;
+}
 .navLang{
     text-decoration: none;
     background-color: var(--nav-color);
