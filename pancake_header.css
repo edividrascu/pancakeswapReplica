@@ -547,7 +547,7 @@ body{
 }
 .navbarMob{
     position:fixed;
-    top:90vh;
+    bottom: 0;
     background-color: var(--nav-color);
     border-top: 1px solid rgb(56,50,65);
     width: 100%;
@@ -565,20 +565,20 @@ body{
     padding-top: 5px;
 }
 #navMobilePurple{
+    display: none;
     position: sticky;
-    margin-top:10px;
     top:100vh;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 40px;
     background-color:rgb(184,173,210);  
-    height: 20px;
+    height: 15px;
 }
 .navbarMob:hover #navMobilePurple{
     display: none;
 }
 .navbarMob:hover{
-    top:93vh;
+    bottom: 0;
 }
 .bottomNav{
     display: flex;
