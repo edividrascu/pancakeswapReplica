@@ -25,6 +25,7 @@ body{
 }
 #top{
 	position:fixed;
+	z-index:999;
 }
 .navLang{
     text-decoration: none;
