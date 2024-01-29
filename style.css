@@ -12,6 +12,7 @@ body {
   padding: 0;
   height: 5000px;
   background-color: #08060b;
+  overflow-x: hidden;
 }
 .background-ecosystem {
   background-color: black;
