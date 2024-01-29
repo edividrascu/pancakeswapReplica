@@ -339,8 +339,9 @@ body{
     background-color: var(--nav-color);
     border:none;
 }
-.dropdownWorld:hover #dropdownlang{
+.dropdownWorld:hover #dropdown-lang{
   display: flex;
+  flex-direction: column;
 }
 .dropdown-content {
     display: none;
@@ -388,11 +389,11 @@ body{
     padding-top: 5px;
   }
 
-#dropdownlang{
-    margin-top: 5px;
+#dropdown-lang{
     border-radius: 10px;
     height: 400px;
     width: 250px;
+    right: -50px;
     display: none;
     flex-direction: column;
     justify-content: center;
