@@ -41,6 +41,7 @@ const optButton= document.getElementById('navGear');
 const setButton= document.getElementById('setButton');
 const settings= document.getElementById('settings');
 const setBack= document.getElementById('setBack');
+const body=document.body;
 optButton.addEventListener("click", openSet);
 setButton.addEventListener("click", closeSet);
 setBack.addEventListener("click", closeSet);
@@ -49,11 +50,14 @@ function openSet(){
     settings.style.display='block';
     settings.style.height='65vh';
     settings.style.border='1px solid rgb(56,50,65)';  
+   body.style.overflow="hidden";
+   
 }
 function closeSet(){
     setBack.style.display='none';
     settings.style.height='0px';
     settings.style.border='0px';
+    body.style.overflow="unset";
 }
 //LANGUAGES
 const langButton= document.getElementById('arrowbox');
