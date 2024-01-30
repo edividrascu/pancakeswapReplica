@@ -45,7 +45,7 @@ function openSet(){
     setBack.style.display='flex';
     settings.style.display='block';
     settings.style.height='65vh';
-    settings.style.border='1px solid rgb(56,50,65)';  
+    settings.style.border='1px solid rgb(56,50,65)'; 
 }
 function closeSet(){
     setBack.style.display='none';
@@ -59,6 +59,7 @@ langButton.addEventListener('click',openLang);
 function openLang(){
     languages.style.height='580px';
 }
+//añadir overflow hidden al body en el engranaje, y modificar el responsive
 
 
   
