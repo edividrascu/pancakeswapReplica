@@ -48,7 +48,7 @@ setBack.addEventListener("click", closeSet);
 function openSet(){
     setBack.style.display='flex';
     settings.style.display='block';
-    settings.style.height='65vh';
+    settings.style.height='540px';
     settings.style.border='1px solid rgb(56,50,65)';  
    body.style.overflow="hidden";
    
