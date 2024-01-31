@@ -1497,6 +1497,7 @@ label {
     margin: 0px;
     overflow: visible;
     max-width: 100%;
+    margin-top: 48px
 }
 .automatic-banner-container{
     padding-top: 0px;
@@ -3681,9 +3682,10 @@ a {
     position: relative;
     display: flex;
     width: 100%;
+    height: 49px;
     flex-shrink: 0;
     bottom: 0px;
-    
+    background-color: #08060b;
 }
 .eLkFjc svg {
     fill: #0b4576;

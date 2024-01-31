@@ -14,18 +14,20 @@ body{
    
 }
 #setBack{
+    overflow: hidden;
     width: 100%;
     height: 100%;
     background-color: white;
-    position: absolute;
+    position:fixed;
     opacity: 0.5;
-    z-index: 4;
+    z-index: 9999;
     display: none;
-    
+    top: 0;
 }
 #top{
 	position:fixed;
-	z-index:999;
+	z-index: 999;
+    top:0;
 }
 .navLang{
     text-decoration: none;
@@ -39,7 +41,7 @@ body{
 }
 #warningText {
     background-image: linear-gradient(rgb(92,64,144),rgb(60,36,99));
-    width: calc(100%-15px);
+    width: calc(100vw);
     height: 80px;
     display: flex;
     align-items: center;
@@ -154,12 +156,13 @@ body{
     border-radius: 20px;
     width: 100vw;
     height: 0px;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     bottom: 0px;
-    z-index: 4;
+    z-index: 9999;
     display: block;
     transition: 300ms ease-out;
+    margin: 0 auto;
 }
 #setSettings{
     border-bottom: var(--border);
@@ -606,6 +609,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 #statsText{
     color: rgb(244,238,255);
@@ -644,20 +648,20 @@ body{
 .statisticsOne{
     color: rgb(244,238,255);
     font-weight: bolder;
-    font-size: 110%;
+    
     min-width: 100px;
     white-space: nowrap;
 }
 .statisticsTwo{
     color: rgb(168,129,252);
     font-weight: bolder;
-    font-size: 230%;
+    font-size: 200%;
     white-space: nowrap;
 }
 .statisticsThree{
     color:rgb(184,173,210);
     font-weight: bold;
-    font-size: 105%;
+    
     white-space: nowrap;
 }
 .glide{
@@ -876,7 +880,7 @@ body{
 #robotCrypto{
     display:none;
 }
-@media (max-width :600px){
+@media (max-width :850px){
  #phisText{
     white-space:unset;
  }
@@ -994,6 +998,7 @@ font-size: 89%;
         width:500px;
         height:65vh;
         transition: 0ms;
+        z-index: 9999;
     }
     #setSettings{
         background-image: linear-gradient(to right, rgb(59,64,84),rgb(57,49,68));
@@ -1039,21 +1044,21 @@ font-size: 89%;
         height: 150px;
         position: absolute;
         left: 15px;
-        bottom: -270px;
+        bottom: 270px;
        }
        #ethBallRocket{
         width: 120px;
         height: 220px;
         position: absolute;
         right: 0px;
-        bottom: -310px;
+        bottom: 310px;
        }
        #aptosBallRocket{
         width: 90px;
         height: 110px;
         position: absolute;
         right: 120px;
-        bottom: -200px;
+        bottom: 200px;
         z-index: 1;
        }
      #stats{
