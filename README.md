@@ -36,7 +36,8 @@ Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, puedes
 
 ## Autores
 
-- Michelle Caicedo (https://github.com/Macaicedoa)
 - Edi Vidrascu (https://github.com/edividrascu)
 - Rafael Coín (https://github.com/RafaelCPC)
+- Michelle Caicedo (https://github.com/Macaicedoa)
+
 
